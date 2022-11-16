@@ -5,12 +5,15 @@ global.errorLogger = require("./libs/utils/logger.js")("error").error;
 global.successLogger = require("./libs/utils/logger.js")("success").log;
 global.warnLogger = require("./libs/utils/logger.js")("warn").log;
 
+const chalk = require("chalk");
+const path = require("path");
+
 
 
 // var modulesList = ['query','contentTypes','vocabulary','assets','authors','taxonomy','page'];
 var modulesList = ["query",
-"locales",
 "assets",
+"locales",
 "vocabulary",
 "references",
 "contentTypes",
@@ -40,7 +43,8 @@ var taskResults = sequence(_export);
 
 taskResults
     .then(async function (results) {
-        successLogger("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData exporting has been completed");
+        console.log("\n\n\nData exporting has been completed your file is saved at the location ", chalk.green("\n",path.join(process.cwd(),"drupalMigrationData")));
+        // successLogger("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData exporting has been completed");
         // await StackCloneCommand.run(); // to run to fetch stack from CS
     })
     .catch(function (error) {

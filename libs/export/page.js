@@ -51,15 +51,18 @@ ExtractPosts.prototype = {
     putPosts: function (postsdetails, key, countentry) {
         var self = this;
 
+        var localedata = helper.readFile(
+            path.join(process.cwd(), "drupalMigrationData/locales/locales.json")
+          );
         var folderpath = entriesFolderPath + '/' + key;
         masterFolderPath = path.resolve(config.data, 'master', config.entryfolder);
         if (!fs.existsSync(folderpath)) {
             mkdirp.sync(folderpath);
-            helper.writeFile(path.join(folderpath, "en-us.json"))
+            helper.writeFile(path.join(folderpath, `${localedata.locale_123.code}.json`))
             mkdirp.sync(masterFolderPath);
             helper.writeFile(path.join(masterFolderPath, key + '.json'), '{"en-us":{}}')
         }
-        var contenttype = helper.readFile(path.join(folderpath, "en-us.json"));
+        var contenttype = helper.readFile(path.join(folderpath, `${localedata.locale_123.code}.json`));
         var mastercontenttype = helper.readFile(path.join(masterFolderPath, key + ".json"));
         return when.promise(function (resolve, reject) {
             self.customBar.start(countentry, 0, {
@@ -75,7 +78,7 @@ ExtractPosts.prototype = {
                 path.join(process.cwd(), "drupalMigrationData/references/references.json")
             );
             let taxonomyId = helper.readFile(
-                path.join(process.cwd(), "drupalMigrationData/entries/taxonomy/en-us.json")
+                path.join(process.cwd(), `drupalMigrationData/entries/taxonomy/${localedata.locale_123.code}.json`)
             );
             self.connection.query(contentTypeQuery, function (error, rows, fields) {
                 for (var i = 0; i < rows.length; i++) {
@@ -157,7 +160,7 @@ ExtractPosts.prototype = {
                             else if (field_name[key] == "nid") {
                                 ct_value.uid = `content_type_entries_title_${data["nid"]}`
                             } else if (field_name[key] == "langcode") {
-                                ct_value.locale = "en-us"
+                                ct_value.locale =  localedata.locale_123.code
                             } else if(field_name[key].endsWith("_uri")){
                                 if(data[field_name[key]]){
                                     ct_value[field_name[key].replace("_uri","")] = {
@@ -201,7 +204,7 @@ ExtractPosts.prototype = {
                         }
                     }
 
-                    helper.writeFile(path.join(folderpath, 'en-us.json'), JSON.stringify(contenttype, null, 4))
+                    helper.writeFile(path.join(folderpath, `${localedata.locale_123.code}.json`), JSON.stringify(contenttype, null, 4))
                     helper.writeFile(path.join(masterFolderPath, key + '.json'), JSON.stringify(mastercontenttype, null, 4))
                     self.customBar.increment();
                     resolve({ last: contenttype })

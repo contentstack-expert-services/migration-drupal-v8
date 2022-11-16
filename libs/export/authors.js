@@ -42,8 +42,11 @@ function ExtractAuthors() {
 ExtractAuthors.prototype = {
   putAuthors: function (authordetails) {
     return when.promise(function (resolve, reject) {
+      var localedata = helper.readFile(
+        path.join(process.cwd(), "drupalMigrationData/locales/locales.json")
+      );
       var authordata = helper.readFile(
-        path.join(authorsFolderPath, authorConfig.fileName)
+        path.join(authorsFolderPath, `${localedata.locale_123.code}.json`)
       );
       var authormaster = helper.readFile(
         path.join(masterFolderPath, authorConfig.masterfile)
@@ -72,7 +75,7 @@ ExtractAuthors.prototype = {
         // successLogger("exported author " + "'" + data["name"] + "'");
       });
       helper.writeFile(
-        path.join(authorsFolderPath, authorConfig.fileName),
+        path.join(authorsFolderPath, `${localedata.locale_123.code}.json`),
         JSON.stringify(authordata, null, 4)
       );
       helper.writeFile(

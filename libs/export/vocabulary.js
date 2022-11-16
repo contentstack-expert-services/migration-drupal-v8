@@ -24,18 +24,11 @@ var vocabularyConfig = config.modules.vocabulary,
   masterFolderPath = path.resolve(config.data, "master", config.entryfolder),
   limit = 100;
 
+
+
 /**
 * Create folders and files
 */
-if (!fs.existsSync(vocabularyFolderPath)) {
-  mkdirp.sync(vocabularyFolderPath);
-  helper.writeFile(path.join(vocabularyFolderPath, vocabularyConfig.fileName));
-  mkdirp.sync(masterFolderPath);
-  helper.writeFile(
-    path.join(masterFolderPath, vocabularyConfig.masterfile),
-    '{"en-us":{}}'
-  );
-}
 
 function ExtractVocabulary() {
   this.connection = helper.connect();
@@ -43,11 +36,11 @@ function ExtractVocabulary() {
 
 ExtractVocabulary.prototype = {
   putVocabulary: function (vocabulary) {
-    var vocabularyData = helper.readFile(
-      path.join(vocabularyFolderPath, vocabularyConfig.fileName)
+    var localedata = helper.readFile(
+      path.join(process.cwd(), "drupalMigrationData/locales/locales.json")
     );
-    var masterdata = helper.readFile(
-      path.join(masterFolderPath, vocabularyConfig.masterfile)
+    var vocabularyData = helper.readFile(
+      path.join(vocabularyFolderPath, `${localedata.locale_123.code}.json`)
     );
     return when.promise(function (resolve, reject) {
       vocabulary.map(function (data, index) {
@@ -60,27 +53,24 @@ ExtractVocabulary.prototype = {
         description = jsonValue;
 
         let uid = `${data.vid}_${data["title"].toLowerCase().replace(/[^a-zA-Z0-9]/g, '_')}`;
+        
         vocabularyData[uid] = {
           uid: uid,
           title: data["title"],
           description: description,
         };
-        masterdata["en-us"][data["title"]] = "";
+        
       });
       helper.writeFile(
-        path.join(vocabularyFolderPath, "en-us.json"),
+        path.join(vocabularyFolderPath,  `${localedata.locale_123.code}.json`),
         JSON.stringify(vocabularyData, null, 4)
       );
-      helper.writeFile(
-        path.join(masterFolderPath, "vocabulary.json"),
-        JSON.stringify(masterdata, null, 4)
-      );
+      resolve();
     });
   },
   getAllVocabularies: function (skip) {
     var self = this;
     return when.promise(function (resolve, reject) {
-      // self.connection.connect()
       var query = config["mysql-query"]["vocabulary"];
       query = query + " limit " + skip + ", " + limit;
       self.connection.query(query, function (error, rows, fields) {
@@ -124,9 +114,24 @@ ExtractVocabulary.prototype = {
     });
   },
   start: function () {
-    // successLogger("exporting vocabulary...");
     var self = this;
+    var localedata = helper.readFile(
+      path.join(process.cwd(), "drupalMigrationData/locales/locales.json")
+    );
+  
+    if (!fs.existsSync(vocabularyFolderPath)) {
+      mkdirp.sync(vocabularyFolderPath);
+      helper.writeFile(path.join(vocabularyFolderPath, `${localedata.locale_123.code}.json`));
+      mkdirp.sync(masterFolderPath);
+      helper.writeFile(
+        path.join(masterFolderPath, vocabularyConfig.masterfile),
+        '{"en-us":{}}'
+      );
+    }
     return when.promise(function (resolve, reject) {
+      helper.writeFile(
+        path.join(vocabularyFolderPath,  `${localedata.locale_123.code}.json`)
+      );
       self.connection.connect();
       var query = config["mysql-query"]["vocabularyCount"];
       self.connection.query(query, function (error, rows, fields) {
