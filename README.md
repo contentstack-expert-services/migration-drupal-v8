@@ -1,8 +1,8 @@
 # Content migration from Drupal
 
-Built.io Contentstack is a headless CMS with an API-first approach that puts content at the centre. It is designed to simplify the process of publication by separating code from content.
+Built.io Contentstack is a headless CMS with an API-first approach that puts content at the center. It is designed to simplify the publication process by separating code from content.
 
-This project (export script) allows you to export content from a Drupal using MySQL queries and makes it possible to import it into Built.io Contentstack. Using this project, you can easily export Drupal Content types ( Article, Page, Custom content types) Users, Tags, and Vocabularies, into Built.io Contentstack.
+This project (export script) allows you to export content from Drupal using MySQL queries and makes it possible to import it into Built.io Contentstack. Using this project, you can easily export Drupal Content types ( Article, Page, Custom content types) Users, Tags, and Vocabularies, into Built.io Contentstack.
 
 
 ## Installation
@@ -21,41 +21,48 @@ This command will install the required node files on your system.
 Before exporting the data, you need to add the following configuration settings in the 'config' file within the 'config' folder of the project:
 
 ```bash
-"host":"<<mysql host>>",
-"user":"<<mysql username>>",
-"password":"<<mysql password>>",
-"database":"<<mysql database of drupal>>,
-"data":"<<folder path for data to be exported>>"
+    "host":"<<mysql host>>",
+    "user":"<<mysql username>>",
+    "password":"<<mysql password>>",
+    "database":"<<mysql database of drupal>>,
+    "data":"<<folder path for data to be exported>>"
 ```
+
+For example: 
+
+```bash
+    "mysql":{
+        "host":"localhost",
+        "user":"root",
+        "password":"",
+        "database":"workshop"
+    }
+  ```
 
 
 ## Assets & Images
 
-Your files and assets need to be available and accessible through the internet. For this purpose, you must define the drupal_base_url, public and private file path in the config file so that the exporter will be able to create them.
+Your files and assets need to be available and accessible through the internet. For this purpose, you must define the drupal_base_url, and public and private file paths in the config file so that the exporter can create them.
 
 ```bash
-base_url: http://example_hostname.com
-public_path: <<public file path>>
-private_path: <<private file path>>
+    base_url: http://example_hostname.com,
+    public_path: <<public file path>>,
+    private_path: <<private file path>>
 ```
+
+For example:
+ 
+ ```bash
+    "base_url": "http://localhost/",
+    "public_path": "/sites/default/files/",
+    "private_path": "",
+    "drupal_base_url": "drupal"
+  ```
 
 
 ## Content Types
 
-To be able to properly map the Drupal content types to the Contentstack content types they must be identical by name.
-
-
-## Export modules
-
-After adding settings, you need to export modules. You can either add all modules or only specific modules to suit your requirements.
-
-Note: Before exporting any other module first you need to export query module.
-
-Run the command given below to generate mysql query:
-
-```bash
- npm run export query
-```
+To be able to correctly map the Drupal content types to the Contentstack content types they must be identified by name.
 
 
 ## Export all modules
@@ -67,31 +74,44 @@ Run the command given below to export all the modules:
 ```
 
 
-## Export specific modules
+## Create a new stack in your organisation in contentstack.
 
-Run the command given below to export specific modules:
-
-```bash
- npm run export <<module name>>
-```
-
-For example, the sequence of module names to be exported can be as follows:
-
-1. query
-2. contenttypes
-3. assets
-4. authors
-5. vocabulary
-6. taxonomy
-7. page
+You have to create a new stack in your Contentstack organisation. This stack will be used for migrating the data from Drupal to Contentstack.
 
 
 ## Import content
 
-Now, give the exported 'data' folder path in 'config/index.js' file and
-run the contentstack-importer script to import the content to Built.io Contentstack.
+After that run the [csmig](https://www.npmjs.com/package/csmig) script to import the content to Built.io Contentstack.
 
-Afterthat run the [contentstack-importer](https://github.com/builtio-contentstack/contentstack-import) script to import the content to Built.io Contentstack.
+
+## Steps to install csmig
+
+1. Install the csmig package globally by running the following command:
+
+    ```bash
+    npm i -g csmig
+    ```
+
+
+## How to use csmig package
+
+1. After installing the csmig package run the following command:
+    
+    ```bash
+    csmig run
+    ```
+
+2. Select your organisation region. 
+    for example: North America (NA)
+3. After selecting the region enter your Contentstack credentials to login.
+4. After logging in, select Contentstack from the available options.
+5. After selecting Contentstack, on the next steps select Import from local.
+6. Copy the drupalMigrationData folder path from your project directory.
+    for example: /home/admin/drupalMigrationData
+7. You will get a prompt on whether to import on a new stack or an existing one, please type n and continue.
+8. Select your organisation from your provided organisation list.
+9. Here, you will see the stack that you have created earlier. Please select the particular stack which you have created.
+10. After performing all the above steps your migration from Drupal to Contentstack will begin. 
 
 
 ## Log
@@ -101,9 +121,11 @@ You can find the logs of the export process under libs/utils/logs. The files inc
 
 ## Known issues
 
-1. The internal links will not be updated.
-2. Only supported for Drupal 8.
-
+1. Only supported for Drupal 8+ versions.
+2. Currently, we don't have support for List (Integer) but the alternative solution to store value in content type, we used the Number field.
+3. Currently, we don't have support for List (String) but the alternative solution to store value in content type, we used the String field.
+4. For the title of the Link field, we used the same URL value as the title in Contentstack.
+5. We don't have support for Entity Reference (User). 
 
 ## License
 

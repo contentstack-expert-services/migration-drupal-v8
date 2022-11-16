@@ -10,165 +10,240 @@ phpUnserialize = require("phpunserialize");
  */
 var helper = require("../utils/helper");
 
-const cliProgress = require("cli-progress");
-const colors = require("ansi-colors");
-
-
-var contenttypesConfig = config.modules.contentTypes,
-  contentTypesFolderPath = path.resolve(
+var referencesConfig = config.modules.references,
+  referencesFolderPath = path.resolve(
     config.data,
-    contenttypesConfig.dirName
+    referencesConfig.dirName
   ),
   masterFolderPath = path.resolve(config.data, "master", config.entryfolder);
-var validKeys = contenttypesConfig.validKeys;
+validKeys = referencesConfig.validKeys;
 /**
  * Create folders and files
  */
-mkdirp.sync(contentTypesFolderPath);
+mkdirp.sync(referencesFolderPath);
 mkdirp.sync(masterFolderPath);
-if (!fs.existsSync(contentTypesFolderPath)) {
-  mkdirp.sync(contentTypesFolderPath);
+if (!fs.existsSync(referencesFolderPath)) {
+  mkdirp.sync(referencesFolderPath);
   helper.writeFile(
-    path.join(contentTypesFolderPath, contenttypesConfig.fileName)
+    path.join(referencesFolderPath, referencesConfig.fileName)
   );
   mkdirp.sync(masterFolderPath);
   helper.writeFile(
-    path.join(masterFolderPath, contenttypesConfig.masterfile),
+    path.join(referencesFolderPath, referencesConfig.fileName)
+  )
+  helper.writeFile(
+    path.join(masterFolderPath, referencesConfig.masterfile),
     '{"en-us":{}}'
   );
+} else {
+  helper.writeFile(
+    path.join(referencesFolderPath, referencesConfig.fileName)
+  )
 }
 
-const { drupalMapper } = require("./contentstackMapper")
-
-function ExtractContentTypes() {
+function ExtractReferences() {
   this.master = {};
   this.priority = [];
   this.cycle = [];
   this.connection = helper.connect();
 }
 
-ExtractContentTypes.prototype = {
-  customBar: null,
-  initalizeLoader: function () {
-    this.customBar = new cliProgress.SingleBar({
-      format:
-        "{title}|" +
-        colors.cyan("{bar}") +
-        "|  {percentage}%  || {value}/{total} completed",
-      barCompleteChar: "\u2588",
-      barIncompleteChar: "\u2591",
-      hideCursor: true,
-    });
-  },
-  destroyLoader: function () {
-    if (this.customBar) {
-      this.customBar.stop();
-    }
-  },
+ExtractReferences.prototype = {
   start: function () {
     var self = this;
-    this.initalizeLoader();
-
     return when.promise(function (resolve, reject) {
       self
-        .getcontenttypes()
-        .then(function (results) {
-          for (var key in self.master) {
-            self.detectCycle(key);
-          }
-          for (var key in self.master) {
-            self.setPriority(key);
-            self.cycle = [];
-          }
-          resolve();
+        .getReferences()
+        .then(function () {
+          resolve()
         })
-        .catch(function (error) {
-          errorLogger(error);
-          return reject();
+        .catch(function () {
+          reject()
         })
-        .finally(function () {
-          self.destroyLoader();
-        });
     });
   },
-  getcontenttypes: function () {
+  getReferences: function () {
     var self = this;
-    var details_data = [];
     return when.promise(function (resolve, reject) {
-      var query = config["mysql-query"]["ct_mapped"];
+      var queryPageConfig = helper.readFile(
+        path.join(process.cwd(), "/drupalMigrationData/query/index.json")
+      );
+      var pagequery = queryPageConfig.page;
+      var _getPage = [];
+
+      for (var key in pagequery) {
+        _getPage.push(function (key) {
+          return function () {
+            return self.getPageCountQuery(key, queryPageConfig)
+          }
+        }(key));
+      }
+      var taskResults = sequence(_getPage);
+      taskResults
+        .then(function (results) {
+          self.connection.end();
+          resolve();
+        })
+        .catch(function (e) {
+          errorLogger("something wrong while exporting entries " + key + ": ", e);
+          reject(e);
+        })
+    })
+  },
+  getPageCountQuery: function (pagename, queryPageConfig) {
+    var self = this;
+    return when.promise(function (resolve, reject) {
+      var query = queryPageConfig["count"]["" + pagename + "Count"];
       self.connection.query(query, function (error, rows, fields) {
-        for (var i = 0; i < rows.length; i++) {
-          var conv_details = phpUnserialize(rows[i].data);
-          details_data.push({
-            field_label: conv_details?.label,
-            description: conv_details?.description,
-            field_name: conv_details?.field_name,
-            content_types: conv_details?.bundle,
-            type: conv_details?.field_type,
-            handler: conv_details?.settings?.handler,
-            reference: conv_details?.settings?.handler_settings?.target_bundles,
-            min: conv_details?.settings?.min,
-            max: conv_details?.settings?.max,
-            default_value: conv_details?.default_value[0]?.value
-          });
-        }
         if (!error) {
-          if (details_data.length > 0) {
-            self.putContentTypes(details_data, rows);
-            self.connection.end();
-            resolve();
+          var countentry = rows[0]["countentry"];
+
+          if (countentry > 0) {
+
+            self.getPageCount(pagename, countentry, queryPageConfig)
+              .then(function () {
+                resolve()
+              })
+              .catch(function () {
+                reject()
+              })
           } else {
-            self.connection.end();
             resolve();
           }
         } else {
-          self.connection.end();
+          reject(error)
+        }
+      })
+    })
+  }
+  ,
+  putPosts: function (postsdetails, key) {
+    return when.promise(function (resolve, reject) {
+      var referenceData = helper.readFile(
+        path.join(process.cwd(), "/drupalMigrationData/references/references.json")
+      );
+      postsdetails.map((data) => {
+        referenceData[`content_type_entries_title_${data.nid}`] = {
+          uid: `content_type_entries_title_${data.nid}`,
+          _content_type_uid: key,
+        }
+        helper.writeFile(
+          path.join(process.cwd(), "/drupalMigrationData/references/references.json"),
+          JSON.stringify(referenceData, null, 4)
+        );
+      })
+      resolve();
+    })
+  },
+  getQuery: function (pagename, skip, queryPageConfig) {
+    var self = this;
+    return when.promise(function (resolve, reject) {
+      var query = queryPageConfig["page"]["" + pagename + ""];
+      query = query + " limit " + skip + ", " + limit;
+      self.connection.query(query, function (error, rows, fields) {
+        if (!error) {
+          if (rows.length > 0) {
+
+            resolve();
+            self.putPosts(rows, pagename)
+              .then(function (results) {
+                resolve(results);
+              })
+              .catch(function () {
+                reject()
+              })
+          }
+          else {
+            resolve();
+          }
+        } else {
           reject(error);
         }
-      });
-    });
+      })
+    })
   },
-  putContentTypes: function (contentdetails, contentTypeCount) {
+  getPageCount: function (pagename, countentry, queryPageConfig) {
     var self = this;
-    var count = 0;
-
     return when.promise(function (resolve, reject) {
-      var content_types = [];
-      var ct = Object.keys(_.keyBy(contentdetails, "content_types"));
+      var _getPage = [];
 
-      ct.map(function (data, index) {
-        var allkey = _.filter(contentdetails, { content_types: data });
-        drupalMapper(allkey, ct);
-        var contenttypeTitle = data.split("_").join(" ");
+      for (var i = 0, total = countentry; i < total; i += limit) {
+        _getPage.push(function (data) {
+          return function () {
+            return self.getQuery(pagename, data, queryPageConfig);
+          }
+        }(i));
+      }
+      var guardTask = guard.bind(null, guard.n(1));
+      _getPage = _getPage.map(guardTask);
+      var taskResults = parallel(_getPage);
+      taskResults
+        .then(function (results) {
+          resolve();
+        })
+        .catch(function (e) {
+          errorLogger("something wrong while exporting entries" + pagename + ":", e);
+          reject(e);
+        })
+    })
+  },
+  putReferences: function (contentdetails) {
+    var self = this;
+    return when.promise(function (resolve, reject) {
+      var referenceData = helper.readFile(
+        path.join(process.cwd(), "/drupalMigrationData/references/references.json")
+      );
 
-        var main = {
-          title: contenttypeTitle,
-          uid: data,
-          schema: [...drupalMapper(allkey, ct)],
-          description:
-            `Schema for ${contenttypeTitle}`,
-          options: {
-            is_page: true,
-            singleton: false,
-            sub_title: [],
-            title: `title`,
-            url_pattern: "/:title",
-            url_prefix: `/${contenttypeTitle
-              .replace(/[^a-zA-Z0-9]+/g, "")
-              .toLowerCase()}/`,
-          },
-        };
-        count++;
-        content_types.push(main);
-      });
-      var entry = {
-        content_types: content_types,
-      };
+      var queryPageConfig = helper.readFile(
+        path.join(process.cwd(), "/drupalMigrationData/query/index.json")
+      );
+      var pagequery = queryPageConfig.page;
+      var _getPage = [];
+      for (var key in pagequery) {
+        _getPage.push(function (key) {
+          return function () {
+            return self.getPageCountQuery(key, queryPageConfig)
+          }
+        }(key));
+      }
 
-      self.putfield(entry, count);
+      var taskResults = sequence(_getPage);
+      taskResults
+        .then(function (results) {
+          self.connection.end();
+          resolve();
+        })
+        .catch(function (e) {
+          errorLogger("something wrong while exporting entries " + key + ": ", e);
+          reject(e);
+        })
+
+      // for(var pagename in queryPageConfig.page){
+
+      //   var query = queryPageConfig["page"][""+pagename+""];
+      //   var skip = 1;
+      //   query = query + " limit " + skip + ", "+limit;
+      //   self.connection.query(query, function (error, rows, fields) {
+      //     if(error){
+      //     }else{
+      //       rows.map((data)=>{
+      //         referenceData[`content_type_entries_title_${data.nid}`] = {
+      //             uid: `content_type_entries_title_${data.nid}`,
+      //             _content_type_uid: data.type,
+      //           }
+      //           helper.writeFile(
+      //             path.join(process.cwd(), "/drupalMigrationData/references/references.json"),
+      //             JSON.stringify(referenceData, null, 4)
+      //           );
+      //       })
+      //     }
+      //   })
+      // }
+
       resolve();
     });
   },
+
   putfield: function (entry, count) {
     var self = this;
     return when.promise(function (resolve, reject) {
@@ -179,19 +254,6 @@ ExtractContentTypes.prototype = {
       helper.writeFile(path.join(contentTypesFolderPath, "vocabulary.json"), JSON.stringify(vocabulary, null, 4))
       helper.writeFile(path.join(contentTypesFolderPath, "authors.json"), JSON.stringify(authors, null, 4))
       entry.content_types.unshift(authors, vocabulary, taxonomy);
-      var contentTypeCount = count;
-      if (authors) {
-        contentTypeCount++;
-      }
-      if (taxonomy) {
-        contentTypeCount++;
-      }
-      if (vocabulary) {
-        contentTypeCount++;
-      }
-      self.customBar.start(contentTypeCount, 0, {
-        title: "Migrating Content-type ",
-      });
 
       count = count + 4
       for (var i = 0, total = count; i < total; i++) {
@@ -216,9 +278,8 @@ ExtractContentTypes.prototype = {
           }
         }
         helper.writeFile(path.join(contentTypesFolderPath, contentType['uid'] + '.json'), contentType);
-        // successLogger("ContentType " + contentType['uid'] + " successfully migrated")
+        successLogger("ContentType " + contentType['uid'] + " successfully migrated")
         self.master[contentType['uid']] = temp;
-        self.customBar.increment();
         resolve();
       }
     })
@@ -262,7 +323,7 @@ ExtractContentTypes.prototype = {
       var cyclicContentTypes = [];
       function detect(key) {
         seenObjects.push(key);
-        refMapping[key]?.references?.map(function (ref, index) {
+        refMapping[key]['references'].map(function (ref, index) {
           if (seenObjects.indexOf(ref.content_type_uid) == -1) {
             detect(ref.content_type_uid);
           } else {
@@ -331,8 +392,4 @@ function traverseSchemaWithPath(schema, fn, path, entryPath) {
   return _.flatten(_.compact(promises));
 };
 
-/*
- Find out file's
- */
-
-module.exports = ExtractContentTypes;
+module.exports = ExtractReferences;

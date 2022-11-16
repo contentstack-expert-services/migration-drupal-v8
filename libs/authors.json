@@ -53,14 +53,12 @@
   "options": {
     "is_page": true,
     "title": "title",
-    "sub_title": [
-
-    ],
+    "sub_title": [],
     "description": "list of authors",
-    "_version": 7,
+    "_version": 1,
     "url_prefix": "/author/",
     "url_pattern": "/:title",
     "singleton": false
   },
-  "description": ""
+  "description": "Schema for authors"
 }

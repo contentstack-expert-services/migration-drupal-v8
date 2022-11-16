@@ -1,4 +1,4 @@
-var sequence         = require('when/sequence');
+var sequence = require('when/sequence');
 global.config = require('./config');
 // global.querypageconfig = require('./query');
 global.errorLogger = require("./libs/utils/logger.js")("error").error;
@@ -7,44 +7,42 @@ global.warnLogger = require("./libs/utils/logger.js")("warn").log;
 
 
 
-var modulesList = ['query','contentTypes','vocabulary','assets','authors','taxonomy','page'];
+// var modulesList = ['query','contentTypes','vocabulary','assets','authors','taxonomy','page'];
+var modulesList = ["query",
+"locales",
+"assets",
+"vocabulary",
+"references",
+"contentTypes",
+"authors",
+"taxonomy",
+"page",
+];
 //var modulesList = ['contentTypes'];
 var _export = [];
-if(process.argv.length == 3 || process.argv.length == 4) {
-    global.ids = undefined;
-    var val = process.argv[2];
-    if(val && modulesList.indexOf(val) != -1){
-        var ModuleExport = require('./libs/export/'+val+'.js');
-        var moduleExport = new ModuleExport();
-        _export.push(function(){
-            return moduleExport.start() ;
-        })
-    }else {
-        console.log("please provide valid module name.")
-        return 0;
-    }
-}else if(process.argv.length==2){
-    global.ids = undefined;
-    for(var i = 0, total = modulesList.length; i < total - 1; i++) {
-        var list = i + 1;
-        var ModuleExport = require('./libs/export/' + modulesList[list] + '.js');
-        var moduleExport = new ModuleExport();
-        _export.push(function(moduleExport){
-            return function(){ return moduleExport.start() } ;
-        }(moduleExport));
+var database = config.mysql.database;
+global.filePath = undefined;
 
-    }
-}else{
-    console.log("only one module can be exported at a time.");
-    return 0;
+// Module List for Entries
+for (var i = 0, total = modulesList.length; i < total; i++) {
+    var ModuleExport = require("./libs/export/" + modulesList[i] + ".js");
+    var moduleExport = new ModuleExport();
+    _export.push(
+        (function (moduleExport) {
+            return function () {
+                return moduleExport.start(database);
+            };
+        })(moduleExport)
+    );
 }
 
 var taskResults = sequence(_export);
-taskResults
-    .then(function(results) {
-        console.log("migration has been completed.");
-    })
-    .catch(function(error){
-        console.log(error);
-    });
 
+taskResults
+    .then(async function (results) {
+        successLogger("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData exporting has been completed");
+        // await StackCloneCommand.run(); // to run to fetch stack from CS
+    })
+    .catch(function (error) {
+        errorLogger(error);
+    });

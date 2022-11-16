@@ -1,4 +1,5 @@
 {
+  "data": "./drupalMigrationData",
   "entryfolder":"entries",
   "modules": {
     "locales": {
@@ -10,6 +11,11 @@
       "fileName": "contenttype.json",
       "masterfile":"contenttypes.json",
       "validKeys": ["title", "uid", "schema", "options","singleton","description"]
+    },
+    "references": {
+      "dirName": "references",
+      "fileName": "references.json",
+      "masterfile":"references.json"
     },
     "authors": {
       "dirName": "authors",
@@ -51,6 +57,10 @@
       "dirName": "post",
       "fileName": "en-us.json",
       "masterfile":"post.json"
+    },
+    "query": {
+      "dirName": "query",
+      "fileName": "index.json" 
     }
   },
   "base_locale":{"name": "English US", "code":"en-us"},
@@ -60,10 +70,10 @@
     "password":"",
     "database":""
   },
-  "data": "",
-  "base_url":"",
-  "public_path":"",
-  "private_path":"",
+  "base_url": "",
+  "public_path": "",
+  "private_path": "",
+  "drupal_base_url": "",
   "mysql-query":{
     "locale":"SELECT languages.language,languages.name FROM `languages`",
     "taxonomy_term_data":"SELECT a.name, a.description__value,b.tid,b.vid FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.vid=b.vid",
@@ -71,7 +81,7 @@
     "ct_mapped":"SELECT *, CONVERT(data USING utf8) as data FROM config WHERE name LIKE '%field.field.node%'",
     "fileID":"SELECT * FROM `file_usage`",
     "assetCount":"SELECT count(a.fid) as assetcount FROM file_managed a",
-    "assets": "SELECT a.fid, a.filename, a.uri,b.count FROM file_managed a, file_usage b",
+    "assets": "SELECT a.fid, a.filename, a.uri, a.filesize FROM file_managed a",
     "assetsFID": "SELECT a.fid, a.filename, a.uri, b.id,b.count FROM file_managed a, file_usage b WHERE a.fid IN",
     "authorCount":"SELECT count(users_field_data.uid) as usercount FROM users_field_data LEFT JOIN file_managed ON file_managed.fid = users_field_data.uid",
     "authors":"SELECT name,mail,timezone FROM users_field_data LEFT JOIN file_managed ON file_managed.fid = users_field_data.uid",
