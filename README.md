@@ -20,8 +20,7 @@ Before exporting the data, you need to add the following configuration settings 
     "host":"<<mysql host>>",
     "user":"<<mysql username>>",
     "password":"<<mysql password>>",
-    "database":"<<mysql database of drupal>>,
-    "data":"<<folder path for data to be exported>>"
+    "database":"<<mysql database of drupal>>",
 ```
 
 For example:
