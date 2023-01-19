@@ -12,6 +12,8 @@ const { htmlToJson } = require("@contentstack/json-rte-serializer");
  * Internal module Dependencies.
  */
 var helper = require("../utils/helper");
+let { localeSwitch } = require("./localeSwitch");
+
 
 var vocabularyConfig = config.modules.taxonomy,
   vocabularyFolderPath = path.resolve(
@@ -19,9 +21,11 @@ var vocabularyConfig = config.modules.taxonomy,
     config.entryfolder,
     vocabularyConfig.dirName
   ),
-  masterFolderPath = path.resolve(config.data, "master", config.entryfolder),
   limit = 100;
 
+  if (!fs.existsSync(vocabularyFolderPath)) {
+    mkdirp.sync(vocabularyFolderPath);
+  }
 function ExtractTaxonomy() {
   this.connection = helper.connect();
 }
@@ -29,16 +33,11 @@ function ExtractTaxonomy() {
 ExtractTaxonomy.prototype = {
   putTaxonomy: function (categorydetails) {
     return when.promise(function (resolve, reject) {
-      var localedata = helper.readFile(
-        path.join(process.cwd(), "drupalMigrationData/locales/locales.json")
-      );
-      var categorydata = helper.readFile(
-        path.join(vocabularyFolderPath, `${localedata.locale_123.code}.json`)
-      );
-      var categorymaster = helper.readFile(
-        path.join(masterFolderPath, vocabularyConfig.masterfile)
-      );
+      var categorydata = {};
+
       categorydetails.map(function (data, index) {
+        let localeCode = localeSwitch(data.langcode);
+
         var parent = data["parent"];
         let vocabularyRef = [
           {
@@ -54,16 +53,30 @@ ExtractTaxonomy.prototype = {
         ];
 
         var description = data["description"] || "";
+        if(data.langcode === localeCode.drupalLocale){
+          helper.writeFile(
+            path.join(vocabularyFolderPath, `${localeCode.csLocale}.json`),
+            JSON.stringify(categorydata, null, 4)
+          );
+        }
 
+        categorydata = helper.readFile(
+          path.join(vocabularyFolderPath, `${localeCode.csLocale}.json`)
+        );
         // for HTML RTE to JSON RTE convert
         const dom = new JSDOM(description.replace(/&amp;/g, "&"));
         let htmlDoc = dom.window.document.querySelector("body");
         const jsonValue = htmlToJson(htmlDoc);
         description = jsonValue;
+        let currentlocaleCode;
+        if(data.langcode === localeCode.drupalLocale){
+          currentlocaleCode = localeCode.csLocale
+        }
         if (parent != 0 && parent !== undefined) {
           categorydata[`taxonomy_${data["tid"]}`] = {
             uid: `taxonomy_${data["tid"]}`,
             title: data["title"],
+            locale: currentlocaleCode,
             description: description,
             vid: vocabularyRef,
             parent: taxonomyRef,
@@ -72,20 +85,20 @@ ExtractTaxonomy.prototype = {
           categorydata[`taxonomy_${data["tid"]}`] = {
             uid: `taxonomy_${data["tid"]}`,
             title: data["title"],
+            locale: currentlocaleCode,
             description: description,
             vid: vocabularyRef,
           };
         }
-        categorymaster["en-us"][data["tid"]] = "";
+
+        if(data.langcode === localeCode.drupalLocale){
+          helper.writeFile(
+            path.join(vocabularyFolderPath, `${localeCode.csLocale}.json`),
+            JSON.stringify(categorydata, null, 4)
+          );
+        }
       });
-      helper.writeFile(
-        path.join(vocabularyFolderPath, `${localedata.locale_123.code}.json`),
-        JSON.stringify(categorydata, null, 4)
-      );
-      helper.writeFile(
-        path.join(masterFolderPath, vocabularyConfig.masterfile),
-        JSON.stringify(categorymaster, null, 4)
-      );
+
       resolve();
     });
   },
@@ -138,21 +151,10 @@ ExtractTaxonomy.prototype = {
   start: function () {
     // successLogger("exporting taxonomy...");
     var self = this;
-    var localedata = helper.readFile(
-      path.join(process.cwd(), "drupalMigrationData/locales/locales.json")
-    );
+
     /**
      * Create folders and files
      */
-    if (!fs.existsSync(vocabularyFolderPath)) {
-      mkdirp.sync(vocabularyFolderPath);
-      helper.writeFile(path.join(vocabularyFolderPath, `${localedata.locale_123.code}.json`));
-      mkdirp.sync(masterFolderPath);
-      helper.writeFile(
-        path.join(masterFolderPath, vocabularyConfig.masterfile),
-        '{"en-us":{}}'
-      );
-    }
     return when.promise(function (resolve, reject) {
       self.connection.connect();
       var query = config["mysql-query"]["taxonomyCount"];

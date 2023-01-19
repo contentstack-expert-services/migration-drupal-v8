@@ -138,22 +138,6 @@ ExtractAssets.prototype = {
                         tag: [],
                         filename: name,
                         url: url,
-                        ACL: {
-                          roles: [],
-                          others: {
-                            read: false,
-                            create: false,
-                            update: false,
-                            delete: false,
-                            sub_acl: {
-                              read: false,
-                              create: false,
-                              update: false,
-                              delete: false,
-                              publish: false,
-                            },
-                          },
-                        },
                         is_dir: false,
                         parent_uid: null,
                         _version: 1,

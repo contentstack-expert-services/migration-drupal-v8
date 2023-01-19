@@ -1,210 +1,210 @@
 const { locale } = require("./localeSchema");
-function localeMapper(value) {
+function localeMapper(code) {
 
-    switch (value) {
+    switch (code) {
         case "af":
-            return locale("af-za", "Afrikaans - South Africa")
+            return locale(code, "af-za", "Afrikaans - South Africa")
             break;
         case "be":
-            return locale("be-by", "Belarusian - Belarus")
+            return locale(code, "be-by", "Belarusian - Belarus")
             break;
         case "bg":
-            return locale("bg-bg", "Bulgarian - Bulgaria")
+            return locale(code, "bg-bg", "Bulgarian - Bulgaria")
             break;
         case "bs":
-            return locale("bs", "Bosnian (Latin script)")
+            return locale(code, "bs", "Bosnian (Latin script)")
             break;
         case "ca":
-            return locale("ca-es", "Catalan - Catalan")
+            return locale(code, "ca-es", "Catalan - Catalan")
             break;
         case "cs":
-            return locale("cs", "Czech");
+            return locale(code, "cs", "Czech");
             break;
         case "da":
-            return locale("da-dk", "Danish - Denmark")
+            return locale(code, "da-dk", "Danish - Denmark")
             break;
         case "el":
-            return locale("el-gr", "Greek - Greece")
+            return locale(code, "el-gr", "Greek - Greece")
             break;
         case "en":
-            return locale("en-us", "English - United States")
+            return locale(code, "en-us", "English - United States")
             break;
         case "en-x-simple":
-            return locale("en-us", "English - United States")
+            return locale(code, "en-us", "English - United States")
             break;
         case "es":
-            return locale("es", "Spanish");
+            return locale(code, "es", "Spanish");
             break;
         case "et":
-            return locale("et-ee", "Estonian - Estonia")
+            return locale(code, "et-ee", "Estonian - Estonia")
             break;
         case "eu":
-            return locale("eu-es", "Basque - Basque");
+            return locale(code, "eu-es", "Basque - Basque");
             break;
         case "fa":
-            return locale("fa-ir", "Farsi - Iran")
+            return locale(code, "fa-ir", "Farsi - Iran")
             break;
         case "fi":
-            return locale("fi", "Finnish")
+            return locale(code, "fi", "Finnish")
             break;
         case "fil":
-            return locale("fil-ph", "Filipino - Philippines")
+            return locale(code, "fil-ph", "Filipino - Philippines")
             break;
         case "fr":
-            return locale("fr", "French")
+            return locale(code, "fr", "French")
             break;
         case "gd":
-            return locale("gd", "Gaelic");
+            return locale(code, "gd", "Gaelic");
             break;
         case "gl":
-            return locale("gl-es", "gl-es");
+            return locale(code, "gl-es", "gl-es");
             break;
         case "gsw-berne":
-            return locale("de-ch", "German - Switzerland")
+            return locale(code, "de-ch", "German - Switzerland")
             break;
         case "gu":
-            return locale("gu-in", "Gujarati - India")
+            return locale(code, "gu-in", "Gujarati - India")
             break;
         case "he":
-            return locale("he-il", "Hebrew - Israel")
+            return locale(code, "he-il", "Hebrew - Israel")
             break;
         case "hi":
-            return locale("hi-in", "Hindi - India")
+            return locale(code, "hi-in", "Hindi - India")
             break;
         case "hr":
-            return locale("hr-hr", "Croatian - Croatia")
+            return locale(code, "hr-hr", "Croatian - Croatia")
             break;
         case "hu":
-            return locale("hu-hu", "Hungarian - Hungary")
+            return locale(code, "hu-hu", "Hungarian - Hungary")
             break;
         case "hy":
-            return locale("hy-am", "Armenian - Armenia")
+            return locale(code, "hy-am", "Armenian - Armenia")
             break;
         case "id":
-            return locale("id-id", "Indonesian - Indonesia")
+            return locale(code, "id-id", "Indonesian - Indonesia")
             break;
         case "is":
-            return locale("is-is", "Icelandic - Iceland")
+            return locale(code, "is-is", "Icelandic - Iceland")
             break;
         case "it":
-            return locale("it", "Italian")
+            return locale(code, "it", "Italian")
             break;
         case "js":
-            return locale("ja", "Japanese")
+            return locale(code, "ja", "Japanese")
             break;
         case "ka":
-            return locale("ka-ge", "Georgian - Georgia")
+            return locale(code, "ka-ge", "Georgian - Georgia")
             break;
         case "kk":
-            return locale("kk-kz", "Kazakh - Kazakhstan")
+            return locale(code, "kk-kz", "Kazakh - Kazakhstan")
             break;
         case "km":
-            return locale("km-kh", "Khmer - Cambodia")
+            return locale(code, "km-kh", "Khmer - Cambodia")
             break;
         case "kn":
-            return locale("kn-in", "Kannada - India")
+            return locale(code, "kn-in", "Kannada - India")
             break;
         case "ko":
-            return locale("ko", "Korean")
+            return locale(code, "ko", "Korean")
             break;
         case "ky":
-            return locale("ky-kz", "Kyrgyz - Kazakhstan")
+            return locale(code, "ky-kz", "Kyrgyz - Kazakhstan")
             break;
         case "lt":
-            return locale("lt-lt", "Lithuanian - Lithuania")
+            return locale(code, "lt-lt", "Lithuanian - Lithuania")
             break;
         case "lv":
-            return locale("lv-lv", "Latvian - Latvia")
+            return locale(code, "lv-lv", "Latvian - Latvia")
             break;
         case "mk":
-            return locale("mk-mk", "Macedonian (FYROM)")
+            return locale(code, "mk-mk", "Macedonian (FYROM)")
             break;
         case "mn":
-            return locale("mn-mn", "Mongolian - Mongolia")
+            return locale(code, "mn-mn", "Mongolian - Mongolia")
             break;
         case "mr":
-            return locale("mr-in", "Marathi - India")
+            return locale(code, "mr-in", "Marathi - India")
             break;
         case "ms":
-            return locale("my-mm", "Bahasa - Myanmar")
+            return locale(code, "my-mm", "Bahasa - Myanmar")
             break;
         case "nl":
-            return locale("nl-nl", "Dutch - The Netherlands")
+            return locale(code, "nl-nl", "Dutch - The Netherlands")
             break;
         case "nb":
-            return locale("nb-no", "Norwegian (Bokmal) - Norway")
+            return locale(code, "nb-no", "Norwegian (Bokmal) - Norway")
             break;
         case "nn":
-            return locale("nn-no", "Norwegian (Nynorsk) - Norway")
+            return locale(code, "nn-no", "Norwegian (Nynorsk) - Norway")
             break;
         case "pa":
-            return locale("pa-in", "Punjabi - India")
+            return locale(code, "pa-in", "Punjabi - India")
             break;
         case "pl":
-            return locale("pl-pl", "Polish - Poland")
+            return locale(code, "pl-pl", "Polish - Poland")
             break;
         case "pt-pt":
-            return locale("pt-pt", "Portuguese - Portugal")
+            return locale(code, "pt-pt", "Portuguese - Portugal")
             break;
         case "pt-br":
-            return locale("pt-br", "Portuguese - Brazil")
+            return locale(code, "pt-br", "Portuguese - Brazil")
             break;
         case "ro":
-            return locale("ro-ro", "Romanian - Romania")
+            return locale(code, "ro-ro", "Romanian - Romania")
             break;
         case "ru":
-            return locale("ru", "Russian")
+            return locale(code, "ru", "Russian")
             break;
         case "sk":
-            return locale("sk-sk", "Slovak - Slovakia")
+            return locale(code, "sk-sk", "Slovak - Slovakia")
             break;
         case "sl":
-            return locale("sl-si", "Slovenian - Slovenia")
+            return locale(code, "sl-si", "Slovenian - Slovenia")
             break;
         case "sq":
-            return locale("sq-al", "Albanian - Albania")
+            return locale(code, "sq-al", "Albanian - Albania")
             break;
         case "sr":
-            return locale("sr-me", "Serbian - Montenegro")
+            return locale(code, "sr-me", "Serbian - Montenegro")
             break;
         case "sv":
-            return locale("sv", "Swedish")
+            return locale(code, "sv", "Swedish")
             break;
         case "sw":
-            return locale("sw-ke", "Swahili - Kenya")
+            return locale(code, "sw-ke", "Swahili - Kenya")
             break;
         case "ta":
-            return locale("ta-in", "Tamil - India")
+            return locale(code, "ta-in", "Tamil - India")
             break;
         case "ta-lk":
-            return locale("ta-in", "Tamil - India")
+            return locale(code, "ta-in", "Tamil - India")
             break;
         case "te":
-            return locale("te-in", "Telugu - India")
+            return locale(code, "te-in", "Telugu - India")
             break;
         case "th":
-            return locale("th-th", "Thai - Thailand")
+            return locale(code, "th-th", "Thai - Thailand")
             break;
         case "tr":
-            return locale("tr-tr", "Turkish - Turkey")
+            return locale(code, "tr-tr", "Turkish - Turkey")
             break;
         case "uk":
-            return locale("uk-ua", "Ukrainian - Ukraine")
+            return locale(code, "uk-ua", "Ukrainian - Ukraine")
             break;
         case "ur":
-            return locale("ur-pk", "Urdu - Pakistan")
+            return locale(code, "ur-pk", "Urdu - Pakistan")
             break;
         case "vi":
-            return locale("vi-vn", "Vietnamese - Vietnam")
+            return locale(code, "vi-vn", "Vietnamese - Vietnam")
             break;
         case "zh-hans":
-            return locale("zh-chs", "Chinese (Simplified)")
+            return locale(code, "zh-chs", "Chinese (Simplified)")
             break;
         case "zh-hant":
-            return locale("zh-cht", "Chinese (Traditional)")
+            return locale(code, "zh-cht", "Chinese (Traditional)")
             break;
         default:
-            return locale("en-us", "English - United States")
+            return locale(code, "en-us", "English - United States")
             break;
     }
 

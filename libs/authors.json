@@ -38,9 +38,22 @@
       "unique": false
     },
     {
+      "data_type": "text",
+      "display_name": "Timezone",
+      "uid": "timezone",
+      "field_metadata": {
+        "description": "",
+        "default_value": ""
+      },
+      "format": "",
+      "multiple": false,
+      "mandatory": false,
+      "unique": false
+    },
+    {
       "data_type": "file",
-      "display_name": "picture",
-      "uid": "picture",
+      "display_name": "Author Profile Picture",
+      "uid": "author_profile_picture",
       "field_metadata": {
         "description": "",
         "rich_text_type": "standard"

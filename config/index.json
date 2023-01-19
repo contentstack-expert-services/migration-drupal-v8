@@ -65,18 +65,19 @@
   },
   "base_locale":{"name": "English US", "code":"en-us"},
   "mysql":{
-    "host":"",
-    "user":"",
+    "host":"localhost",
+    "user":"root",
     "password":"",
-    "database":""
+    "database":"workshop"
   },
-  "base_url": "",
-  "public_path": "",
+  "base_url": "http://localhost/",
+  "public_path": "/sites/default/files/",
   "private_path": "",
-  "drupal_base_url": "",
+  "drupal_base_url": "drupal",
+  "drupal_master_language":"en",
   "mysql-query":{
     "locale":"SELECT languages.language,languages.name FROM `languages`",
-    "taxonomy_term_data":"SELECT a.name, a.description__value,b.tid,b.vid FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.vid=b.vid",
+    "taxonomy_term_data":"SELECT a.name, a.description__value, a.langcode,b.tid,b.vid FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.vid=b.vid AND a.tid = b.tid",
     "taxonomyCount":"SELECT count(b.tid) as taxonomycount FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.tid = b.tid AND a.vid=b.vid",
     "ct_mapped":"SELECT *, CONVERT(data USING utf8) as data FROM config WHERE name LIKE '%field.field.node%'",
     "fileID":"SELECT * FROM `file_usage`",
@@ -84,8 +85,8 @@
     "assets": "SELECT a.fid, a.filename, a.uri, a.filesize FROM file_managed a",
     "assetsFID": "SELECT a.fid, a.filename, a.uri, b.id,b.count FROM file_managed a, file_usage b WHERE a.fid IN",
     "authorCount":"SELECT count(users_field_data.uid) as usercount FROM users_field_data LEFT JOIN file_managed ON file_managed.fid = users_field_data.uid",
-    "authors":"SELECT name,mail,timezone FROM users_field_data LEFT JOIN file_managed ON file_managed.fid = users_field_data.uid",
-    "vocabulary":"SELECT taxonomy_term_field_data.vid, taxonomy_term_field_data.name AS title, taxonomy_term_field_data.description__value FROM taxonomy_term_field_data",
+    "authors":"SELECT a.uid, a.name, a.mail, a.timezone, a.langcode, b.user_picture_target_id as picture FROM users_field_data a, user__user_picture b WHERE a.uid = b.entity_id",
+    "vocabulary":"SELECT taxonomy_term_field_data.vid, taxonomy_term_field_data.name AS title, taxonomy_term_field_data.description__value, taxonomy_term_field_data.langcode FROM taxonomy_term_field_data",
     "vocabularyCount":"SELECT count(taxonomy_term_field_data.vid) as vocabularycount FROM taxonomy_term_field_data"
   }
 }
