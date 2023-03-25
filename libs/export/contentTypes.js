@@ -2,37 +2,31 @@ var mkdirp = require("mkdirp"),
   path = require("path"),
   _ = require("lodash"),
   fs = require("fs"),
-  when = require("when");
-phpUnserialize = require("phpunserialize");
+  when = require("when"),
+  phpUnserialize = require("phpunserialize"),
+  chalk = require("chalk");
 
 /**
  * Internal module Dependencies.
  */
 var helper = require("../utils/helper");
 
-const chalk = require("chalk");
-
 var contenttypesConfig = config.modules.contentTypes,
   contentTypesFolderPath = path.resolve(
     config.data,
     contenttypesConfig.dirName
-  ),
-  masterFolderPath = path.resolve(config.data, "master", config.entryfolder);
+  );
+
 var validKeys = contenttypesConfig.validKeys;
 /**
  * Create folders and files
  */
 mkdirp.sync(contentTypesFolderPath);
-mkdirp.sync(masterFolderPath);
+
 if (!fs.existsSync(contentTypesFolderPath)) {
   mkdirp.sync(contentTypesFolderPath);
   helper.writeFile(
     path.join(contentTypesFolderPath, contenttypesConfig.fileName)
-  );
-  mkdirp.sync(masterFolderPath);
-  helper.writeFile(
-    path.join(masterFolderPath, contenttypesConfig.masterfile),
-    '{"en-us":{}}'
   );
 }
 

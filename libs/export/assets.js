@@ -17,7 +17,6 @@ var helper = require("../utils/helper");
 
 var assetConfig = config.modules.asset,
   assetFolderPath = path.resolve(config.data, assetConfig.dirName),
-  masterFolderPath = path.resolve(process.cwd(), "logs", "assets"),
   assetMasterFolderPath = path.resolve(process.cwd(), "logs", "assets"),
   failedJSON =
     helper.readFile(path.join(assetMasterFolderPath, "failed.json")) || {};
@@ -29,8 +28,6 @@ if (!fs.existsSync(assetFolderPath)) {
 
   mkdirp.sync(assetMasterFolderPath);
   helper.writeFile(path.join(assetMasterFolderPath, "failed.json"));
-  helper.writeFile(path.join(assetMasterFolderPath, assetConfig.fileName));
-  helper.writeFile(path.join(assetMasterFolderPath, assetConfig.masterfile));
 }
 
 //Reading a File
@@ -192,9 +189,8 @@ ExtractAssets.prototype = {
     });
   },
   start: function () {
-    // successLogger("exporting assets...", database);
+    successLogger("exporting assets...");
     var self = this;
-    // this.initalizeLoader();
 
     return when.promise(function (resolve, reject) {
       var query = config["mysql-query"]["assets"];
