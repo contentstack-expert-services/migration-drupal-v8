@@ -4,8 +4,8 @@ var mkdirp = require("mkdirp"),
   when = require("when"),
   guard = require("when/guard"),
   parallel = require("when/parallel"),
-  sequence = require("when/sequence");
-phpUnserialize = require("phpunserialize");
+  sequence = require("when/sequence"),
+  limit = 100;
 
 /**
  * Internal module Dependencies.
@@ -13,23 +13,15 @@ phpUnserialize = require("phpunserialize");
 var helper = require("../utils/helper");
 
 var referencesConfig = config.modules.references,
-  referencesFolderPath = path.resolve(config.data, referencesConfig.dirName),
-  masterFolderPath = path.resolve(config.data, "master", config.entryfolder);
+  referencesFolderPath = path.resolve(config.data, referencesConfig.dirName);
 validKeys = referencesConfig.validKeys;
 /**
  * Create folders and files
  */
 mkdirp.sync(referencesFolderPath);
-mkdirp.sync(masterFolderPath);
 if (!fs.existsSync(referencesFolderPath)) {
   mkdirp.sync(referencesFolderPath);
   helper.writeFile(path.join(referencesFolderPath, referencesConfig.fileName));
-  mkdirp.sync(masterFolderPath);
-  helper.writeFile(path.join(referencesFolderPath, referencesConfig.fileName));
-  helper.writeFile(
-    path.join(masterFolderPath, referencesConfig.masterfile),
-    '{"en-us":{}}'
-  );
 } else {
   helper.writeFile(path.join(referencesFolderPath, referencesConfig.fileName));
 }
