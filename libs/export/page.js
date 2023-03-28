@@ -8,6 +8,7 @@ var mkdirp = require("mkdirp"),
   guard = require("when/guard"),
   parallel = require("when/parallel"),
   sequence = require("when/sequence"),
+  phpUnserialize = require("phpunserialize"),
   limit = 3;
 
 const chalk = require("chalk");
@@ -21,26 +22,7 @@ var helper = require("../../libs/utils/helper.js");
 
 var entriesConfig = config.modules.entries,
   entriesFolderPath = path.resolve(config.data, entriesConfig.dirName);
-let assetId = helper.readFile(
-  path.join(process.cwd(), "drupalMigrationData", "assets", "assets.json")
-);
-let referenceId = helper.readFile(
-  path.join(
-    process.cwd(),
-    "drupalMigrationData",
-    "references",
-    "references.json"
-  )
-);
-let taxonomyId = helper.readFile(
-  path.join(
-    process.cwd(),
-    "drupalMigrationData",
-    "entries",
-    "taxonomy",
-    "en-us.json"
-  )
-);
+
 function ExtractPosts() {
   this.connection = helper.connect();
 }
@@ -48,7 +30,26 @@ function ExtractPosts() {
 ExtractPosts.prototype = {
   putPosts: function (postsdetails, key) {
     var self = this;
-
+    let assetId = helper.readFile(
+      path.join(process.cwd(), "drupalMigrationData", "assets", "assets.json")
+    );
+    let referenceId = helper.readFile(
+      path.join(
+        process.cwd(),
+        "drupalMigrationData",
+        "references",
+        "references.json"
+      )
+    );
+    let taxonomyId = helper.readFile(
+      path.join(
+        process.cwd(),
+        "drupalMigrationData",
+        "entries",
+        "taxonomy",
+        "en-us.json"
+      )
+    );
     var folderpath = entriesFolderPath + "/" + key;
     masterFolderPath = path.resolve(config.data, "master", config.entryfolder);
     if (!fs.existsSync(folderpath)) {
