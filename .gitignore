@@ -13,3 +13,4 @@ drupalMigrationData
 package-lock.json*
 /package-lock.json
 logs
+package-lock*

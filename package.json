@@ -13,7 +13,7 @@
     "lodash": "^4.17.2",
     "mariadb": "^2.1.1",
     "mkdirp": "^0.5.1",
-    "mysql": "^2.12.0",
+    "mysql2": "^3.5.1",
     "node-async-loop": "^1.2.2",
     "path": "^0.12.7",
     "phpunserialize": "^1.0.1",

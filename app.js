@@ -5,7 +5,6 @@ global.errorLogger = require("./libs/utils/logger.js")("error").error;
 global.successLogger = require("./libs/utils/logger.js")("success").log;
 global.warnLogger = require("./libs/utils/logger.js")("warn").log;
 
-// var modulesList = ['query','contentTypes','vocabulary','assets','authors','taxonomy','page'];
 var modulesList = [
   "query",
   "locales",
@@ -17,7 +16,6 @@ var modulesList = [
   "taxonomy",
   "page",
 ];
-//var modulesList = ['contentTypes'];
 var _export = [];
 var database = config.mysql.database;
 global.filePath = undefined;
@@ -40,7 +38,6 @@ var taskResults = sequence(_export);
 taskResults
   .then(async function (results) {
     successLogger("Data exporting has been completed");
-    // await StackCloneCommand.run(); // to run to fetch stack from CS
   })
   .catch(function (error) {
     errorLogger(error);

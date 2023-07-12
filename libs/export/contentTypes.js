@@ -168,7 +168,7 @@ ExtractContentTypes.prototype = {
         }
         helper.writeFile(
           path.join(contentTypesFolderPath, contentType["uid"] + ".json"),
-          contentType
+          JSON.stringify(contentType, null, 4)
         );
         console.log(
           "ContentType",
