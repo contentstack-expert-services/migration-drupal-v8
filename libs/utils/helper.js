@@ -7,7 +7,7 @@
 var fs = require('fs');
 var path = require('path');
 var mkdirp = require('mkdirp');
-var mysql  = require('mysql');
+var mysql  = require('mysql2');
 //const mysql = require('mariadb');
 
 
