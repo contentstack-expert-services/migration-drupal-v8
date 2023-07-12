@@ -48,7 +48,7 @@ ExtractAssets.prototype = {
       var url = assets["uri"];
 
       let replaceValue =
-        config.base_url + config.drupal_base_url + config.public_path;
+        config.base_url + config.public_path;
       if (!url.startsWith("http")) {
         url = url.replace("public://", replaceValue);
         url = url.replace("private://", replaceValue);
