@@ -7,9 +7,9 @@ global.warnLogger = require("./libs/utils/logger.js")("warn").log;
 
 // var modulesList = ['query','contentTypes','vocabulary','assets','authors','taxonomy','page'];
 var modulesList = [
-  "query",
+  // "query",
   "locales",
-  "assets",
+  // "assets",
   "vocabulary",
   "references",
   "contentTypes",

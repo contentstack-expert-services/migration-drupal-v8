@@ -1,0 +1,2913 @@
+{
+    "content_type_entries_title_206": {
+        "uid": "content_type_entries_title_206",
+        "title": "Women's Volleyball",
+        "locale": "en-us",
+        "created": "2019-05-24T12:53:21.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "5dabc4e22b564b79b9c1cf12ea42524d",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "77eb4d010f2c476ca80351b2c0782438",
+                    "children": [
+                        {
+                            "text": "Volleyball"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2061,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-volleyball",
+            "href": "https://riceowls.com/sports/womens-volleyball"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_207": {
+        "uid": "content_type_entries_title_207",
+        "title": "Women's Track and Field",
+        "locale": "en-us",
+        "created": "2019-05-24T13:12:07.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "ae51cb87cc344ff09d67ee082894587e",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "a2abef073f3e44c6baa8d807822fff7b",
+                    "children": [
+                        {
+                            "text": "Track and Field (W)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2126,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-track-and-field",
+            "href": "https://riceowls.com/sports/womens-track-and-field"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_208": {
+        "uid": "content_type_entries_title_208",
+        "title": "Women's Tennis",
+        "locale": "en-us",
+        "created": "2019-05-24T13:12:07.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "93a43e8dfbf843e2ae19b7d716edc40c",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "5bfadffd8b8544c983017f7e951d35d5",
+                    "children": [
+                        {
+                            "text": "Tennis (W)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2121,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-tennis",
+            "href": "https://riceowls.com/sports/womens-tennis"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_209": {
+        "uid": "content_type_entries_title_209",
+        "title": "Women's Swimming",
+        "locale": "en-us",
+        "created": "2019-05-24T13:12:07.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "e1d64cd529b54513a70df971142779aa",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "f89ad99cfffd4d91938573bc2dbe553b",
+                    "children": [
+                        {
+                            "text": "Swimming"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2116,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-swimming-and-diving",
+            "href": "https://riceowls.com/sports/womens-swimming-and-diving"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_210": {
+        "uid": "content_type_entries_title_210",
+        "title": "Women's Soccer",
+        "locale": "en-us",
+        "created": "2019-05-24T13:12:07.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "485731e7646d4d05a0450e13f126eb1b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "8bcc5c5997384d259ec8af642b27b215",
+                    "children": [
+                        {
+                            "text": "Soccer"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2111,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-soccer",
+            "href": "https://riceowls.com/sports/womens-soccer"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_211": {
+        "uid": "content_type_entries_title_211",
+        "title": "Women's Cross Country",
+        "locale": "en-us",
+        "created": "2019-05-24T13:12:07.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "fa59c160bf6c4d75b8aebe02334e9ba5",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "c78e77d433184d888bfe6e491d4ba630",
+                    "children": [
+                        {
+                            "text": "Cross Country (W)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2106,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-cross-country",
+            "href": "https://riceowls.com/sports/womens-cross-country"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_212": {
+        "uid": "content_type_entries_title_212",
+        "title": "Women's Basketball",
+        "locale": "en-us",
+        "created": "2019-05-24T13:12:07.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "483dfebdafbc40c0a04ed419ea7ef39c",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "1cee3208cb384d0488cf066440df761b",
+                    "children": [
+                        {
+                            "text": "Basketball (W)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2101,
+        "field_link": {
+            "title": "https://riceowls.com/sports/womens-basketball",
+            "href": "https://riceowls.com/sports/womens-basketball"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_24",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_213": {
+        "uid": "content_type_entries_title_213",
+        "title": "Men's Baseball",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "59b62be506504610ba4d86e984629719",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "298bb405016e4a9cbae087931b3c1183",
+                    "children": [
+                        {
+                            "text": "Baseball"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2066,
+        "field_link": {
+            "title": "https://riceowls.com/sports/baseball",
+            "href": "https://riceowls.com/sports/baseball"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_214": {
+        "uid": "content_type_entries_title_214",
+        "title": "Men's Basketball",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "2130b8c2d9874c7394f2eeadaf068c05",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "d0187da7aa654e33965e715a6f8bfc90",
+                    "children": [
+                        {
+                            "text": "Basketball (M)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2071,
+        "field_link": {
+            "title": "https://riceowls.com/sports/mens-basketball",
+            "href": "https://riceowls.com/sports/mens-basketball"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_215": {
+        "uid": "content_type_entries_title_215",
+        "title": "Men's Cross-Country",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "222e191d25424cf2b16af75385dfc28b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "0d0f198ec1c74e49ab07ca578b7d79e2",
+                    "children": [
+                        {
+                            "text": "Cross Country (M)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2076,
+        "field_link": {
+            "title": "https://riceowls.com/sports/mens-cross-country",
+            "href": "https://riceowls.com/sports/mens-cross-country"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_216": {
+        "uid": "content_type_entries_title_216",
+        "title": "Men's Track and Field",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "e73e1c7899f14beab7e8d0b90504b519",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "3f9857232e10403d992d0e1effbbe49c",
+                    "children": [
+                        {
+                            "text": "Track and Field (M)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2096,
+        "field_link": {
+            "title": "https://riceowls.com/sports/mens-track-and-field",
+            "href": "https://riceowls.com/sports/mens-track-and-field"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_217": {
+        "uid": "content_type_entries_title_217",
+        "title": "Men's Tennis",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "572b80bf71554b698f8f50e5caf7ada7",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "a755972c50814fd783947c6f791ff9e6",
+                    "children": [
+                        {
+                            "text": "Tennis (M)"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2091,
+        "field_link": {
+            "title": "https://riceowls.com/sports/mens-tennis",
+            "href": "https://riceowls.com/sports/mens-tennis"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_218": {
+        "uid": "content_type_entries_title_218",
+        "title": "Men's Golf",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "32baf7f6485b404e9ef04eef0ce3fda1",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "ff8504e851bd45999b5be6576b1fdbeb",
+                    "children": [
+                        {
+                            "text": "Golf"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2086,
+        "field_link": {
+            "title": "https://riceowls.com/sports/mens-golf",
+            "href": "https://riceowls.com/sports/mens-golf"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_219": {
+        "uid": "content_type_entries_title_219",
+        "title": "Men's Football",
+        "locale": "en-us",
+        "created": "2019-05-24T13:39:32.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "755245037bd4487ab0eda00b84ca9d8f",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "e7e269a5177b42e69314084c3f17831c",
+                    "children": [
+                        {
+                            "text": "Football"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2081,
+        "field_link": {
+            "title": "https://riceowls.com/sports/football",
+            "href": "https://riceowls.com/sports/football"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_23",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_222": {
+        "uid": "content_type_entries_title_222",
+        "title": "Baker Institute",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "9af713e7410f46a39469cf312042b82f",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "f191bfa18bf7452e9787c009f11b4f60",
+                    "children": [
+                        {
+                            "text": "Baker"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "4ee0693a9fde4216827379f568627e4c"
+                        },
+                        {
+                            "text": "Institute",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://www.bakerinstitute.org/",
+            "href": "https://www.bakerinstitute.org/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_223": {
+        "uid": "content_type_entries_title_223",
+        "title": "Boniuk Institute",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "4459c7f1437d4bfc98125fceacb9dedc",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "e1f447b1e0bd49e1aaa550b0267cf874",
+                    "children": [
+                        {
+                            "text": "Boniuk"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "df38cc2c875c42339b419f91d99fc58a"
+                        },
+                        {
+                            "text": "Institute",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://boniuk.rice.edu/",
+            "href": "https://boniuk.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_224": {
+        "uid": "content_type_entries_title_224",
+        "title": "Chao Center for Asian Studies",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "8b902ad056714357aed79a9a61cf6b5a",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "7862f538452846e7b1d636c22557f39f",
+                    "children": [
+                        {
+                            "text": "Chao Center"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "ed06852e19594044a306edd27cad62be"
+                        },
+                        {
+                            "text": "for Asian Studies",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://chaocenter.rice.edu/",
+            "href": "https://chaocenter.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_225": {
+        "uid": "content_type_entries_title_225",
+        "title": "Smalley-Curl Institute",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "dfccec411489480599b1464c1a76edb6",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "3e4825b0673345308b07f0e90279f549",
+                    "children": [
+                        {
+                            "text": "Smalley-Curl"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "79059fbe95b6412ea9202279a4b650e9"
+                        },
+                        {
+                            "text": "Institute",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://sci.rice.edu/",
+            "href": "https://sci.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_226": {
+        "uid": "content_type_entries_title_226",
+        "title": "Kinder Institute for Urban Research",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "53b9108ba08f46149be2680fc1e7d29b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "0713abb4cf534f4b94f4f524f1677446",
+                    "children": [
+                        {
+                            "text": "Kinder Institute"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "76af0dcf69e54956a1202381668a22ad"
+                        },
+                        {
+                            "text": "for Urban Research",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://kinder.rice.edu/",
+            "href": "https://kinder.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_227": {
+        "uid": "content_type_entries_title_227",
+        "title": "Humanities Research Center",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "c64b0f8f551c450099fc3d6fd469c204",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "5e0c8403929d4eb9ac53e3373f7a2a98",
+                    "children": [
+                        {
+                            "text": "Humanities"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "b261adee1f89490088782fa3d26b15e3"
+                        },
+                        {
+                            "text": "Research Center",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://hrc.rice.edu/",
+            "href": "https://hrc.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_229": {
+        "uid": "content_type_entries_title_229",
+        "title": "View All",
+        "locale": "en-us",
+        "created": "2019-05-24T14:35:13.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_12",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "6c58665e17a747f486eafc5d9c2cfb55",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "e02db99301904e67bd651f6e0a73dc4e",
+                    "children": [
+                        {
+                            "text": "View "
+                        },
+                        {
+                            "text": "All",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "entity:node/194",
+            "href": "entity:node/194"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_32",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_234": {
+        "uid": "content_type_entries_title_234",
+        "title": "Faculty Senate",
+        "locale": "en-us",
+        "created": "2019-05-24T15:03:11.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "822aec9b03694df582194b577751996a",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "52e2e35156864150a2dd45a780e7409b",
+                    "children": [
+                        {
+                            "text": "Faculty"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "f56417cdf214486b960d05f90ec3b358"
+                        },
+                        {
+                            "text": "Senate",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://senate.rice.edu/",
+            "href": "https://senate.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_10",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_235": {
+        "uid": "content_type_entries_title_235",
+        "title": "University Committees",
+        "locale": "en-us",
+        "created": "2019-05-24T15:03:11.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "9b4c8487aa804d469b777b7b09826da2",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "8f432e4be12b4881a005cfb6409e0f14",
+                    "children": [
+                        {
+                            "text": "University"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "f0190dd2ebf44bef86440e38d99db206"
+                        },
+                        {
+                            "text": "Committees",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://senate.rice.edu/university-committees",
+            "href": "https://senate.rice.edu/university-committees"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_10",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_236": {
+        "uid": "content_type_entries_title_236",
+        "title": "Committee Charges",
+        "locale": "en-us",
+        "created": "2019-05-24T15:03:11.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "267977f89bd24492b25c7332a63d5485",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "96528c2cd6ae4ce3aee62ebbec927f10",
+                    "children": [
+                        {
+                            "text": "Committee"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "e4c4ff5fc4414456a8d74b685f6203ef"
+                        },
+                        {
+                            "text": "Charges",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://senate.rice.edu",
+            "href": "https://senate.rice.edu"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_10",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_237": {
+        "uid": "content_type_entries_title_237",
+        "title": "University Policies",
+        "locale": "en-us",
+        "created": "2019-05-24T15:03:11.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "f6353e2f12214b81bf599b3f8d569bc8",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "3a40d4fcd02b4a94b6d69e8da6361263",
+                    "children": [
+                        {
+                            "text": "University"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "28efc393edbe469985744ea17786f753"
+                        },
+                        {
+                            "text": "Policies",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://policy.rice.edu/",
+            "href": "https://policy.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_10",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_238": {
+        "uid": "content_type_entries_title_238",
+        "title": "Login to Edgar",
+        "locale": "en-us",
+        "created": "2019-05-24T15:25:03.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "5f3afaf365174bf5945d68fb7be91b0c",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "ef61c4ebe53047f19b771e0594dd9666",
+                    "children": [
+                        {
+                            "text": "Login to"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "9058da4a2f2f464f848e00be09f1321c"
+                        },
+                        {
+                            "text": "Edgar",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://edgar.rice.edu/",
+            "href": "https://edgar.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_27",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_239": {
+        "uid": "content_type_entries_title_239",
+        "title": "General Announcements",
+        "locale": "en-us",
+        "created": "2019-05-24T15:25:03.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "061cd0b5b70b4423ab07e80c05306e0a",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "6f01b22df3ad449c8cc5a53ac9c4903f",
+                    "children": [
+                        {
+                            "text": "General"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "0d6963ad3753472fb24ecbb049c6f631"
+                        },
+                        {
+                            "text": "Announcements",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://ga.rice.edu/",
+            "href": "https://ga.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_27",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_240": {
+        "uid": "content_type_entries_title_240",
+        "title": "Where is the bus?",
+        "locale": "en-us",
+        "created": "2019-05-24T15:25:03.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "e13ae39078884a538ca1af3fb710f9b3",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "78850739a9814a00a031ac127c2671a5",
+                    "children": [
+                        {
+                            "text": "Where is"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "4b25e6c1f0684555a9df3afb666c3253"
+                        },
+                        {
+                            "text": "the Bus?",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://rice.ridesystems.net/routes",
+            "href": "https://rice.ridesystems.net/routes"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_27",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_241": {
+        "uid": "content_type_entries_title_241",
+        "title": "Login to Esther",
+        "locale": "en-us",
+        "created": "2019-05-24T15:27:28.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "e18879bf0aa4487eb2c16d3cc6387f21",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "76f3d23a995a4f81ab24b2ff42fe5bbe",
+                    "children": [
+                        {
+                            "text": "Log In to"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "a6bd3deb2be54bf6aa9c8682c2dd88ae"
+                        },
+                        {
+                            "text": "Esther",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://esther.rice.edu/",
+            "href": "https://esther.rice.edu/"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_27",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_242": {
+        "uid": "content_type_entries_title_242",
+        "title": "Academic Calendar",
+        "locale": "en-us",
+        "created": "2019-05-24T15:27:28.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "27c0b0f392874e9c8e31a83269568726",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "20c8e6dc68e9417485a5bce0847a07ef",
+                    "children": [
+                        {
+                            "text": "Academic"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "514cb3a0cbd444a68a9a525df8187115"
+                        },
+                        {
+                            "text": "Calendar",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://registrar.rice.edu/calendars",
+            "href": "https://registrar.rice.edu/calendars"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_22",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_243": {
+        "uid": "content_type_entries_title_243",
+        "title": "Order Transcripts",
+        "locale": "en-us",
+        "created": "2019-05-24T15:27:28.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "a7ddf3d6fb894f1fb74354f97ceba93b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "bd5afe434efa430daa505bff410fa0c2",
+                    "children": [
+                        {
+                            "text": "Order"
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "97984abaae6c4a22b399e2b30e55f87f"
+                        },
+                        {
+                            "text": "Transcripts",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://registrar.rice.edu/students/transcripts",
+            "href": "https://registrar.rice.edu/students/transcripts"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_19",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_466": {
+        "uid": "content_type_entries_title_466",
+        "title": "Rice Log In",
+        "locale": "en-us",
+        "created": "2019-07-30T20:03:55.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "793beb18a5de40c2aceaee9149078424",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "61d9c04b9b984bf096ebff0923ea04cb",
+                    "children": [
+                        {
+                            "text": "Rice Log In"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://canvas.rice.edu/login/saml/4",
+            "href": "https://canvas.rice.edu/login/saml/4"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_56",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_471": {
+        "uid": "content_type_entries_title_471",
+        "title": "Non-Rice Log In",
+        "locale": "en-us",
+        "created": "2019-07-30T20:05:18.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "9dc1bef4ef2e46f9b633b10db70fa841",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "2e6316da97a240a5816a9c19358ba453",
+                    "children": [
+                        {
+                            "text": "Non-Rice Log In"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://canvas.rice.edu/login/canvas",
+            "href": "https://canvas.rice.edu/login/canvas"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_56",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_661": {
+        "uid": "content_type_entries_title_661",
+        "title": "Rice News",
+        "locale": "en-us",
+        "created": "2020-04-24T04:03:11.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "91da440f868442bd8642bc50cc727f33",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "5b1759edac1f448a8320ece80d1e6c8d",
+                    "children": [
+                        {
+                            "text": "Rice News"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://news.rice.edu",
+            "href": "https://news.rice.edu"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_71",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_666": {
+        "uid": "content_type_entries_title_666",
+        "title": "Return to Rice",
+        "locale": "en-us",
+        "created": "2020-04-24T04:08:25.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "087e1eab832845318c6c20a4787c2777",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "fcc7daf61d954ba8ab35787b1003306a",
+                    "children": [
+                        {
+                            "text": "Return to Rice"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://return.rice.edu",
+            "href": "https://return.rice.edu"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_71",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_671": {
+        "uid": "content_type_entries_title_671",
+        "title": "Virtual Events",
+        "locale": "en-us",
+        "created": "2020-04-24T04:10:37.000Z",
+        "type": "link",
+        "field_category_target_id": [
+            {
+                "uid": "taxonomy_5",
+                "_content_type_uid": "taxonomy"
+            }
+        ],
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "cad88a2cbf9c4c5aab3c243db75a2f84",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "c05143929ee14c1987f64aafc0ca366e",
+                    "children": [
+                        {
+                            "text": "Virtual Events"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_link": {
+            "title": "https://events.rice.edu/#!view/all/tags/digital",
+            "href": "https://events.rice.edu/#!view/all/tags/digital"
+        },
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_71",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_701": {
+        "uid": "content_type_entries_title_701",
+        "title": "Antarctic Journal: The science of sound, sea and ice",
+        "locale": "en-us",
+        "created": "2020-05-07T20:35:47.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "70e1f620bb654bdf8adf74f3dc8f8728",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "f1d770cc295844428272855d26c2a974",
+                    "children": [
+                        {
+                            "text": "Antarctic Journal: ",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "The science of sound, sea and ice"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1306,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/antarctic-journal/",
+            "href": "https://magazine.rice.edu/2020/02/antarctic-journal/"
+        },
+        "field_link_order": 1,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_706": {
+        "uid": "content_type_entries_title_706",
+        "title": "Love & Law: A career centered on civil rights for all",
+        "locale": "en-us",
+        "created": "2020-05-07T20:39:21.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "c1c068e83e3a4770bc5d8cc261222d4a",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "61b8ecf2f12e4d75959cfdd20a6008e5",
+                    "children": [
+                        {
+                            "text": "Love & Law:",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": " A career centered on civil rights for all"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1311,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/love-law/",
+            "href": "https://magazine.rice.edu/2020/02/love-law/"
+        },
+        "field_link_order": 2,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_711": {
+        "uid": "content_type_entries_title_711",
+        "title": "Where Students Become Family: All about RAs",
+        "locale": "en-us",
+        "created": "2020-05-07T20:40:08.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "8e4a24afcc2b4db396c6e7baa01e8b4e",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "a67c0c0ef3b54f1e9591b50961015567",
+                    "children": [
+                        {
+                            "text": "Where Students Become Family: ",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "All about RAs"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1316,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/where-students-become-family/",
+            "href": "https://magazine.rice.edu/2020/02/where-students-become-family/"
+        },
+        "field_link_order": 3,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_716": {
+        "uid": "content_type_entries_title_716",
+        "title": "When Seconds Count",
+        "locale": "en-us",
+        "created": "2020-05-07T20:40:45.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "868c7778e7204a27a8e487b17e05c7c0",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "7a3a5e8bee5e4e7db295b99f7c4389c7",
+                    "children": [
+                        {
+                            "text": "When Seconds Count",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1321,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/when-seconds-count/",
+            "href": "https://magazine.rice.edu/2020/02/when-seconds-count/"
+        },
+        "field_link_order": 4,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_721": {
+        "uid": "content_type_entries_title_721",
+        "title": "Building and Rebuilding Rice: Reflecting on Kraft Hall ",
+        "locale": "en-us",
+        "created": "2020-05-07T20:41:26.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "c69d1e53cf0445769cbe5b807cb21a0e",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "5e63b6e61f4c4905a4edd2d2d5d886d8",
+                    "children": [
+                        {
+                            "text": "Building and Rebuilding Rice: ",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "Reflecting on Kraft Hall "
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1326,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/building-and-rebuilding-rice/",
+            "href": "https://magazine.rice.edu/2020/02/building-and-rebuilding-rice/"
+        },
+        "field_link_order": 5,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_726": {
+        "uid": "content_type_entries_title_726",
+        "title": "The Artful Architect: Fabiola López-Durán in her own words",
+        "locale": "en-us",
+        "created": "2020-05-07T20:42:05.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "e2f13e7b19c7478fa2aff455d1b030f0",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "59867642141c47e198cd25e9e16b58b8",
+                    "children": [
+                        {
+                            "text": "The Artful Architect: ",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "Fabiola López-Durán in her own words"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1331,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/the-artful-architect/",
+            "href": "https://magazine.rice.edu/2020/02/the-artful-architect/"
+        },
+        "field_link_order": 6,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_731": {
+        "uid": "content_type_entries_title_731",
+        "title": "Sisterly Safe Haven: Pediatric cancer research",
+        "locale": "en-us",
+        "created": "2020-05-07T20:42:36.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "732003db1c2d4882bec237010f46575d",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "396c0dc8ee3148dba0093ce8b1abe781",
+                    "children": [
+                        {
+                            "text": "Sisterly Safe Haven: ",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "Pediatric cancer research"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1336,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/sisterly-safe-haven/",
+            "href": "https://magazine.rice.edu/2020/02/sisterly-safe-haven/"
+        },
+        "field_link_order": 7,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_736": {
+        "uid": "content_type_entries_title_736",
+        "title": "Life Lessons",
+        "locale": "en-us",
+        "created": "2020-05-07T20:44:22.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "382d2931900a4707b63fddbc3b8154cc",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "6f0ce4eac56a4690ae55a65604a93665",
+                    "children": [
+                        {
+                            "text": "Life Lessons",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1341,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/02/life-lessons/",
+            "href": "https://magazine.rice.edu/2020/02/life-lessons/"
+        },
+        "field_link_order": 8,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_741": {
+        "uid": "content_type_entries_title_741",
+        "title": "The DNA Zoo",
+        "locale": "en-us",
+        "created": "2020-05-31T15:09:12.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "92c47775d1e044f59e3f8174984df836",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "36d0b2776e3a44d5a52bb252195f3aa1",
+                    "children": [
+                        {
+                            "text": "The DNA Zoo"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1371,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/04/the-dna-zoo/",
+            "href": "https://magazine.rice.edu/2020/04/the-dna-zoo/"
+        },
+        "field_link_order": 1
+    },
+    "content_type_entries_title_746": {
+        "uid": "content_type_entries_title_746",
+        "title": "Pivoting in a Pandemic",
+        "locale": "en-us",
+        "created": "2020-05-31T15:11:53.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "05d5f423a9d847e095e8afbc9cfb66ab",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "cbd7885a4b934ff4b8970bf57d30cd96",
+                    "children": [
+                        {
+                            "text": "Pivoting in a Pandemic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1471,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/07/pivoting-in-a-pandemic/",
+            "href": "https://magazine.rice.edu/2020/07/pivoting-in-a-pandemic/"
+        },
+        "field_link_order": 2
+    },
+    "content_type_entries_title_751": {
+        "uid": "content_type_entries_title_751",
+        "title": "A Changed World",
+        "locale": "en-us",
+        "created": "2020-05-31T15:15:04.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "3e680b478f6040be9c4ae24b48a6806a",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "6f3e862da99f4032bb366a96c6b08e16",
+                    "children": [
+                        {
+                            "text": "A Changed World"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1381,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/04/a-changed-world/",
+            "href": "https://magazine.rice.edu/2020/04/a-changed-world/"
+        },
+        "field_link_order": 3,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_81",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_756": {
+        "uid": "content_type_entries_title_756",
+        "title": "Tiny Acts of Kindness",
+        "locale": "en-us",
+        "created": "2020-05-31T15:20:16.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "a0e7f84a98c3428099f36c4f0550a945",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "9465ee7609f245dea86ab86fd13ceda9",
+                    "children": [
+                        {
+                            "text": "Tiny Acts of Kindness"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1386,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/05/tiny-acts-of-kindness/",
+            "href": "https://magazine.rice.edu/2020/05/tiny-acts-of-kindness/"
+        },
+        "field_link_order": 4
+    },
+    "content_type_entries_title_761": {
+        "uid": "content_type_entries_title_761",
+        "title": "Ventilator Takes Step Forward",
+        "locale": "en-us",
+        "created": "2020-05-31T15:32:36.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "0eacd2e4d2d243dc9f0fb11d9458d712",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "9cc6872fa93f4308887922d803cb5bb2",
+                    "children": [
+                        {
+                            "text": "Ventilator Takes Step Forward",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1391,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/05/ventilator-takes-step-forward/",
+            "href": "https://magazine.rice.edu/2020/05/ventilator-takes-step-forward/"
+        },
+        "field_link_order": 4
+    },
+    "content_type_entries_title_766": {
+        "uid": "content_type_entries_title_766",
+        "title": "We must act to reduce deadly discrimination and racism",
+        "locale": "en-us",
+        "created": "2020-06-04T19:57:43.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "0ab13ee3df9b4df3babe5d73a60ffc2c",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "ccfa38fae4c045c08958042b7c25481f",
+                    "children": [
+                        {
+                            "text": "We must act to reduce deadly",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "\n",
+                            "break": false,
+                            "separaterId": "7828a21e63ce4d98aa5be782e3b8350d",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        },
+                        {
+                            "text": "\ndiscrimination and racism",
+                            "attrs": {
+                                "style": {}
+                            },
+                            "bold": true
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1406,
+        "field_link": {
+            "title": "http://news.rice.edu/2020/06/01/leebron-we-must-act-to-reduce-deadly-discrimination-and-racism/",
+            "href": "http://news.rice.edu/2020/06/01/leebron-we-must-act-to-reduce-deadly-discrimination-and-racism/"
+        },
+        "field_link_order": 1,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_81",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_776": {
+        "uid": "content_type_entries_title_776",
+        "title": "From Rice EMS to Chicago Med",
+        "locale": "en-us",
+        "created": "2020-07-07T21:40:54.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "a5c1c33d2e564c0d902331683c79ba01",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "465d511a88e548aa87d71359fb48937b",
+                    "children": [
+                        {
+                            "text": "From Rice EMS to Chicago Med"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1466,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/06/from-rice-ems-to-chicago-med/",
+            "href": "https://magazine.rice.edu/2020/06/from-rice-ems-to-chicago-med/"
+        },
+        "field_link_order": 1
+    },
+    "content_type_entries_title_781": {
+        "uid": "content_type_entries_title_781",
+        "title": "Distance Learning in the Delta",
+        "locale": "en-us",
+        "created": "2020-07-07T21:46:06.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "97589eb7dc7249799ab5befd17ae67ae",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "0c76440141784e848b0bd71ee209f289",
+                    "children": [
+                        {
+                            "text": "Distance Learning in the Delta"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1476,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/07/distance-learning-in-the-delta/",
+            "href": "https://magazine.rice.edu/2020/07/distance-learning-in-the-delta/"
+        },
+        "field_link_order": 3
+    },
+    "content_type_entries_title_786": {
+        "uid": "content_type_entries_title_786",
+        "title": "Notes From Inside",
+        "locale": "en-us",
+        "created": "2020-07-07T21:48:57.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "15bd811088c54f25a4289d2a9162543b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "d68bc06dca7948828f069808c6c75a88",
+                    "children": [
+                        {
+                            "text": "Notes From Inside"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1481,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/06/notes-from-inside/",
+            "href": "https://magazine.rice.edu/2020/06/notes-from-inside/"
+        },
+        "field_link_order": 4
+    },
+    "content_type_entries_title_791": {
+        "uid": "content_type_entries_title_791",
+        "title": "Facetime Friendship",
+        "locale": "en-us",
+        "created": "2020-07-07T21:53:19.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "5b3c7b8713aa40ba8058881520559ba2",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "3e77073c693e4dc99b5092f8b1ae635b",
+                    "children": [
+                        {
+                            "text": "Facetime Friendship"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1491,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/07/face-time/",
+            "href": "https://magazine.rice.edu/2020/07/face-time/"
+        },
+        "field_link_order": 5
+    },
+    "content_type_entries_title_821": {
+        "uid": "content_type_entries_title_821",
+        "title": "Solving the Vaccine Puzzle",
+        "locale": "en-us",
+        "created": "2021-04-07T17:25:22.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "0f0f04fbf79949ffbe281577d0d751b7",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "9d0c79b5998e46c98813ad7709afe95d",
+                    "children": [
+                        {
+                            "text": "Solving the Vaccine Puzzle"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1726,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/01/solving-the-vaccine-puzzle/",
+            "href": "https://magazine.rice.edu/2021/01/solving-the-vaccine-puzzle/"
+        },
+        "field_link_order": 1,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_826": {
+        "uid": "content_type_entries_title_826",
+        "title": "The Changemaker",
+        "locale": "en-us",
+        "created": "2021-04-07T17:27:01.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "d3f1a12b31bc48c484c0d804d25a58cf",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "d428e1f498ef45c492f9117d6a772aa0",
+                    "children": [
+                        {
+                            "text": "The Changemaker"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1731,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/01/the-changemaker/",
+            "href": "https://magazine.rice.edu/2021/01/the-changemaker/"
+        },
+        "field_link_order": 2,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_831": {
+        "uid": "content_type_entries_title_831",
+        "title": "The Medical Media Analyst",
+        "locale": "en-us",
+        "created": "2021-04-07T17:27:59.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "81b8ce4c95774bf781d54393130f925d",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "11c26f301b7b4b7f81160a86d904967a",
+                    "children": [
+                        {
+                            "text": "The Medical Media Analyst"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1736,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/02/unconventional-wisdom-kirsten-ostherr/",
+            "href": "https://magazine.rice.edu/2021/02/unconventional-wisdom-kirsten-ostherr/"
+        },
+        "field_link_order": 3,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_836": {
+        "uid": "content_type_entries_title_836",
+        "title": "Carina Close-Up",
+        "locale": "en-us",
+        "created": "2021-04-07T17:28:58.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "67202051f0dc433c9d090f2a1b3ed97e",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "da22294d3d474ceea669b8c1a9dde6a0",
+                    "children": [
+                        {
+                            "text": "Carina Close-Up"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1741,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2020/06/notes-from-inside/",
+            "href": "https://magazine.rice.edu/2020/06/notes-from-inside/"
+        },
+        "field_link_order": 4,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_841": {
+        "uid": "content_type_entries_title_841",
+        "title": "Testing the Water",
+        "locale": "en-us",
+        "created": "2021-04-07T17:29:45.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "4cbf27e64aa247a19a5197eabbd744ac",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "223d00762702489b83bb9caf45f73a6a",
+                    "children": [
+                        {
+                            "text": "Testing the Water"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1746,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/02/testing-the-water/",
+            "href": "https://magazine.rice.edu/2021/02/testing-the-water/"
+        },
+        "field_link_order": 5,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_851": {
+        "uid": "content_type_entries_title_851",
+        "title": "Grads at Last",
+        "locale": "en-us",
+        "created": "2021-07-29T17:45:05.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "07f5127711d24024af6aab0424b52a98",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "a5caaf4a1fb347a3b5128ba5adf5c68f",
+                    "children": [
+                        {
+                            "text": "Grads at Last"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1771,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/07/grads-at-last/",
+            "href": "https://magazine.rice.edu/2021/07/grads-at-last/"
+        },
+        "field_link_order": 1
+    },
+    "content_type_entries_title_856": {
+        "uid": "content_type_entries_title_856",
+        "title": "The Health Economist",
+        "locale": "en-us",
+        "created": "2021-07-29T17:46:47.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "e9574d8dfa354f5bbf51209f64b0eccd",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "f4c3ded97953435e9dc22f43de6222d6",
+                    "children": [
+                        {
+                            "text": "The Health Economist"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1776,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/07/unconventional-wisdom-the-health-economist/",
+            "href": "https://magazine.rice.edu/2021/07/unconventional-wisdom-the-health-economist/"
+        },
+        "field_link_order": 2
+    },
+    "content_type_entries_title_861": {
+        "uid": "content_type_entries_title_861",
+        "title": "Opening Doors",
+        "locale": "en-us",
+        "created": "2021-07-29T18:03:47.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "ea8f417a1fec49dca6ee0b5f76b3d042",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "e3e63a98bd3c4862b584716d40a3d88e",
+                    "children": [
+                        {
+                            "text": "Opening Doors"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1781,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/07/opening-doors/",
+            "href": "https://magazine.rice.edu/2021/07/opening-doors/"
+        },
+        "field_link_order": 3
+    },
+    "content_type_entries_title_866": {
+        "uid": "content_type_entries_title_866",
+        "title": "Pandemic's Paradox",
+        "locale": "en-us",
+        "created": "2021-07-29T18:12:29.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "6385bc6f80ed4edc938f7808ee2dc252",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "a7599f4d1d85495fb1ddb5982cb8fc09",
+                    "children": [
+                        {
+                            "text": "Pandemic’s Paradox"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1786,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/07/pandemics-paradox/",
+            "href": "https://magazine.rice.edu/2021/07/pandemics-paradox/"
+        },
+        "field_link_order": 4
+    },
+    "content_type_entries_title_871": {
+        "uid": "content_type_entries_title_871",
+        "title": "The Science Behind the Scenes",
+        "locale": "en-us",
+        "created": "2021-07-29T18:16:59.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "804bd0210adc402c9e16783d85861333",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "8588bbe6da9944cda78345894727d63d",
+                    "children": [
+                        {
+                            "text": "The Science Behind the Scenes"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1791,
+        "field_link": {
+            "title": "https://magazine.rice.edu/2021/07/syllabus-the-science-behind-the-scenes/",
+            "href": "https://magazine.rice.edu/2021/07/syllabus-the-science-behind-the-scenes/"
+        },
+        "field_link_order": 5
+    },
+    "content_type_entries_title_876": {
+        "uid": "content_type_entries_title_876",
+        "title": "Paging Through History",
+        "locale": "en-us",
+        "created": "2021-11-16T15:15:31.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "dbb665bf047c4ab68e0a97b8ad8a0303",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "23e3419744d64ed88377ec4226a02ed3",
+                    "children": [
+                        {
+                            "text": "Paging Through History"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1806,
+        "field_link": {
+            "title": "https://magazine.rice.edu/fall-2021/paging-through-history",
+            "href": "https://magazine.rice.edu/fall-2021/paging-through-history"
+        },
+        "field_link_order": 1
+    },
+    "content_type_entries_title_881": {
+        "uid": "content_type_entries_title_881",
+        "title": "Hello, Class of 2025",
+        "locale": "en-us",
+        "created": "2021-11-16T15:19:05.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "0d110b8bf1334371b4ff88fb8389fa82",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "a2f18559056e4340a8c8acb94350ab2a",
+                    "children": [
+                        {
+                            "type": "span",
+                            "attrs": {},
+                            "uid": "13726a49c69b4eb1a24c9c54e420f471",
+                            "children": [
+                                {
+                                    "text": "Hello, Class of 2025",
+                                    "attrs": {
+                                        "style": {}
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1811,
+        "field_link": {
+            "title": "https://magazine.rice.edu/fall-2021/hello-class-2025",
+            "href": "https://magazine.rice.edu/fall-2021/hello-class-2025"
+        },
+        "field_link_order": 2
+    },
+    "content_type_entries_title_886": {
+        "uid": "content_type_entries_title_886",
+        "title": "Alumni Books: Art, Acclaimed",
+        "locale": "en-us",
+        "created": "2021-11-16T15:21:31.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "3397f0b0964f4e96818606b32f52ffb1",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "670b99c3ffa14ffcbe4bcf80dd2215df",
+                    "children": [
+                        {
+                            "text": "Alumni Books: Art, Acclaimed"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1816,
+        "field_link": {
+            "title": "https://magazine.rice.edu/fall-2021/alumni-books-art-acclaimed",
+            "href": "https://magazine.rice.edu/fall-2021/alumni-books-art-acclaimed"
+        },
+        "field_link_order": 3
+    },
+    "content_type_entries_title_891": {
+        "uid": "content_type_entries_title_891",
+        "title": "Under the Skin",
+        "locale": "en-us",
+        "created": "2021-11-16T15:23:13.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "cfc1479e5122418abf3f4ca9fe5e9c12",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "5b7748e997064e4c8f253ba6e5967ba8",
+                    "children": [
+                        {
+                            "text": "Under the Skin"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1821,
+        "field_link": {
+            "title": "https://magazine.rice.edu/fall-2021/under-skin",
+            "href": "https://magazine.rice.edu/fall-2021/under-skin"
+        },
+        "field_link_order": 4
+    },
+    "content_type_entries_title_896": {
+        "uid": "content_type_entries_title_896",
+        "title": "Syllabus: A Seat at the Table",
+        "locale": "en-us",
+        "created": "2021-11-16T15:25:03.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "8a3dc695535046fbacfde5467019d086",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "70bd22dbb832487c9c5ec556bf0231a7",
+                    "children": [
+                        {
+                            "text": "Syllabus: A Seat at the Table"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 1826,
+        "field_link": {
+            "title": "https://magazine.rice.edu/fall-2021/syllabus-seat-table",
+            "href": "https://magazine.rice.edu/fall-2021/syllabus-seat-table"
+        },
+        "field_link_order": 5
+    },
+    "content_type_entries_title_926": {
+        "uid": "content_type_entries_title_926",
+        "title": "A Found History",
+        "locale": "en-us",
+        "created": "2022-02-18T21:32:44.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "b1cd5f5d77b647699503759c3c0628f6",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "e97421bbf5cd493aa4dc0025fe633928",
+                    "children": [
+                        {
+                            "text": "A Found History"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2001,
+        "field_link": {
+            "title": "https://magazine.rice.edu/winter-2022/found-history",
+            "href": "https://magazine.rice.edu/winter-2022/found-history"
+        },
+        "field_link_order": 1,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_931": {
+        "uid": "content_type_entries_title_931",
+        "title": "In Case of Emergency",
+        "locale": "en-us",
+        "created": "2022-02-18T21:40:27.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "360cf6987a82486e866aef6cd68b2a33",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "c00ef9ebfb634b0db72ab074f0d7348f",
+                    "children": [
+                        {
+                            "type": "span",
+                            "attrs": {},
+                            "uid": "b61f34ae32ef4a0baeb751ae6ba30915",
+                            "children": [
+                                {
+                                    "text": "In Case of Emergency",
+                                    "attrs": {
+                                        "style": {}
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2006,
+        "field_link": {
+            "title": "https://magazine.rice.edu/winter-2022/case-emergency",
+            "href": "https://magazine.rice.edu/winter-2022/case-emergency"
+        },
+        "field_link_order": 4,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_936": {
+        "uid": "content_type_entries_title_936",
+        "title": "Unconventional Wisdom: Richard Baraniuk",
+        "locale": "en-us",
+        "created": "2022-02-18T21:41:43.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "ffdda57078814a59b926fa826bbe095c",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "8f63aa595f0e4578b1ce78e312cba172",
+                    "children": [
+                        {
+                            "text": "Unconventional Wisdom: Richard Baraniuk"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2011,
+        "field_link": {
+            "title": "https://magazine.rice.edu/winter-2022/unconventional-wisdom-richard-baraniuk",
+            "href": "https://magazine.rice.edu/winter-2022/unconventional-wisdom-richard-baraniuk"
+        },
+        "field_link_order": 3,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_941": {
+        "uid": "content_type_entries_title_941",
+        "title": "Studies in Mass and Volume",
+        "locale": "en-us",
+        "created": "2022-02-18T21:43:47.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "10a93156e14b4b109e435ca4965d7bc2",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "9277b09c829244b3a79effe7070585d0",
+                    "children": [
+                        {
+                            "text": "Studies in Mass and Volume"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2016,
+        "field_link": {
+            "title": "https://magazine.rice.edu/winter-2022/studies-mass-and-volume",
+            "href": "https://magazine.rice.edu/winter-2022/studies-mass-and-volume"
+        },
+        "field_link_order": 2,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    },
+    "content_type_entries_title_946": {
+        "uid": "content_type_entries_title_946",
+        "title": "Our Next President",
+        "locale": "en-us",
+        "created": "2022-02-18T21:45:30.000Z",
+        "type": "link",
+        "field_formatted_title": {
+            "type": "doc",
+            "uid": "4fa7f61872eb451bb6f8633655efe0e8",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "uid": "ba1fb23ea10a4bbfa250f1a5c760fa99",
+                    "children": [
+                        {
+                            "text": "Our Next President"
+                        }
+                    ]
+                }
+            ]
+        },
+        "field_image_target_id": 2021,
+        "field_link": {
+            "title": "https://magazine.rice.edu/winter-2022/our-next-president",
+            "href": "https://magazine.rice.edu/winter-2022/our-next-president"
+        },
+        "field_link_order": 5,
+        "field_tags_target_id": [
+            {
+                "uid": "taxonomy_31",
+                "_content_type_uid": "taxonomy"
+            }
+        ]
+    }
+}

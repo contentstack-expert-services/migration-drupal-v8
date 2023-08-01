@@ -9,7 +9,7 @@ node_modules/*
 libs/utils/logs/
 libs/utils/logs/*
 drupal_testing.sql
-drupalMigrationData
+
 package-lock.json*
 /package-lock.json
 logs

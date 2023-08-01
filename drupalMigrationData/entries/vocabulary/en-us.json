@@ -1,0 +1,947 @@
+{
+    "news_featured_stories": {
+        "uid": "news_featured_stories",
+        "title": "Featured Stories",
+        "description": {
+            "type": "doc",
+            "uid": "c07c848f77424f6388ca3e116c017622",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "93f5bea66efa4ffaa08cc6a5e6c572ee"
+                }
+            ]
+        }
+    },
+    "videos_faculty": {
+        "uid": "videos_faculty",
+        "title": "Faculty",
+        "description": {
+            "type": "doc",
+            "uid": "ae33255aae394222a9f5145f69585a13",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "61735dfb216e41868fa28157c7d4c3f9"
+                }
+            ]
+        }
+    },
+    "videos_featured": {
+        "uid": "videos_featured",
+        "title": "Featured",
+        "description": {
+            "type": "doc",
+            "uid": "502fcbc03b79430aa586faf21453b2e2",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "f748f8fce9254e98838f09bdf477a4f8"
+                }
+            ]
+        }
+    },
+    "videos_about": {
+        "uid": "videos_about",
+        "title": "About",
+        "description": {
+            "type": "doc",
+            "uid": "4451197a95044e7a8b3bfb6daa80b6af",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "0d70b04ec199400ab03313d6755fbfd6"
+                }
+            ]
+        }
+    },
+    "pages_featured": {
+        "uid": "pages_featured",
+        "title": "Featured",
+        "description": {
+            "type": "doc",
+            "uid": "d6485bf8d1c04e308efb312143319e08",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "156d674117b5420e9bf61a62def11e2f"
+                }
+            ]
+        }
+    },
+    "tags_about": {
+        "uid": "tags_about",
+        "title": "About",
+        "description": {
+            "type": "doc",
+            "uid": "9ebf4d761c1f454db64dcbd028f625c7",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "2d6ed80db27d4f61aee239e35f7271a9"
+                }
+            ]
+        }
+    },
+    "tags_academics": {
+        "uid": "tags_academics",
+        "title": "Academics",
+        "description": {
+            "type": "doc",
+            "uid": "f0af83b8493e49e984495fe13b991899",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "0fdb483f7d3443f4b64254b98bdb4b42"
+                }
+            ]
+        }
+    },
+    "videos_research": {
+        "uid": "videos_research",
+        "title": "Research",
+        "description": {
+            "type": "doc",
+            "uid": "2de27e3358834dca9479a0924b5227cd",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "934b24c7a0644de8956e13f07060468b"
+                }
+            ]
+        }
+    },
+    "videos_home": {
+        "uid": "videos_home",
+        "title": "Home",
+        "description": {
+            "type": "doc",
+            "uid": "93353330cf3a4d3d86cd67f351049e36",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "0b54d83b54144ad28d1c88e70495e7ba"
+                }
+            ]
+        }
+    },
+    "tags_university_leadership": {
+        "uid": "tags_university_leadership",
+        "title": "University Leadership",
+        "description": {
+            "type": "doc",
+            "uid": "6552ad5fc9b04d12a8c3bdb5569e80ff",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "feff17e7a4014560a2e4f6b2a6fc472a"
+                }
+            ]
+        }
+    },
+    "pages_university_leadership": {
+        "uid": "pages_university_leadership",
+        "title": "University Leadership",
+        "description": {
+            "type": "doc",
+            "uid": "be79e0e4fd89468dad3047c487c8fdcc",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "3543181dda244ad49859ac5a55d727e8"
+                }
+            ]
+        }
+    },
+    "pages_academics": {
+        "uid": "pages_academics",
+        "title": "Academics",
+        "description": {
+            "type": "doc",
+            "uid": "0317e6bb8e4f438eb0eebff4b78844bd",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "79e61371fec442459030bc8304d9a66f"
+                }
+            ]
+        }
+    },
+    "videos_community": {
+        "uid": "videos_community",
+        "title": "Community",
+        "description": {
+            "type": "doc",
+            "uid": "248587fb721c427aae20ee4e25be4ee6",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "e6ed6c5d75a440d6a3737781e27e11c5"
+                }
+            ]
+        }
+    },
+    "tags_community": {
+        "uid": "tags_community",
+        "title": "Community",
+        "description": {
+            "type": "doc",
+            "uid": "dbe82b06d5234246a24fca01726cd29c",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "a8a400a730964c18bde686627686fa4c"
+                }
+            ]
+        }
+    },
+    "list_featured": {
+        "uid": "list_featured",
+        "title": "Featured",
+        "description": {
+            "type": "doc",
+            "uid": "9f538f9a96b2417ea6701447edf648e9",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "5d9871e13bfb4ea18cc555b0ce6655f6"
+                }
+            ]
+        }
+    },
+    "tags_maps": {
+        "uid": "tags_maps",
+        "title": "Maps",
+        "description": {
+            "type": "doc",
+            "uid": "ae43f4e2ebf3455ab82c2b36f91741f7",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "07d373a812404dd18e930196ea41ad40"
+                }
+            ]
+        }
+    },
+    "tags_admissions___aid": {
+        "uid": "tags_admissions___aid",
+        "title": "Admissions & Aid",
+        "description": {
+            "type": "doc",
+            "uid": "07f9f34e5e9a4ee8b98ce2da4fbcaee2",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "ee30f775abfd45189cd679899ad02592"
+                }
+            ]
+        }
+    },
+    "tags_aid_links": {
+        "uid": "tags_aid_links",
+        "title": "Aid Links",
+        "description": {
+            "type": "doc",
+            "uid": "c445f3f3780b4da9ab4a2ab437e1dd8f",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "2742f31fed3c4fccb03bfda06ea685ec"
+                }
+            ]
+        }
+    },
+    "tags_undergraduates": {
+        "uid": "tags_undergraduates",
+        "title": "Undergraduates",
+        "description": {
+            "type": "doc",
+            "uid": "8323ab3406eb4bda9c94994932d1c92b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "d0de532a11a3429fbc764e75c060de7d"
+                }
+            ]
+        }
+    },
+    "tags_parent": {
+        "uid": "tags_parent",
+        "title": "Parent",
+        "description": {
+            "type": "doc",
+            "uid": "104ce48e152b4400ba3e83dd48bd8038",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "03f4167140924870bb9b92a3b694ce41"
+                }
+            ]
+        }
+    },
+    "tags_campus_life": {
+        "uid": "tags_campus_life",
+        "title": "Campus Life",
+        "description": {
+            "type": "doc",
+            "uid": "2e5ee5191ab74ec4b8c1f2ff502aea3d",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "3408f1ed0ac64328ad39c03d6c963b8c"
+                }
+            ]
+        }
+    },
+    "tags_graduates": {
+        "uid": "tags_graduates",
+        "title": "Graduates",
+        "description": {
+            "type": "doc",
+            "uid": "3db95dd78cfd409eb09f23b1ab9c6e76",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "11aed856480e409eb93b0fd0bd7ec368"
+                }
+            ]
+        }
+    },
+    "tags_men_s_varsity": {
+        "uid": "tags_men_s_varsity",
+        "title": "Men's Varsity",
+        "description": {
+            "type": "doc",
+            "uid": "1329bbd167b84efc9ca23f1a54a8f810",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "462889c65a4543299c69045481e04390"
+                }
+            ]
+        }
+    },
+    "tags_women_s_varsity": {
+        "uid": "tags_women_s_varsity",
+        "title": "Women's Varsity",
+        "description": {
+            "type": "doc",
+            "uid": "d9f8e0878c694e77809d9d9df8b1b983",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "2becc46f9f244137ade33d45f66269a3"
+                }
+            ]
+        }
+    },
+    "tags_club_sports": {
+        "uid": "tags_club_sports",
+        "title": "Club Sports",
+        "description": {
+            "type": "doc",
+            "uid": "7bfca0dfc2a245919a86f20737d6d74b",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "ee5c07e11304471e907a00283f593491"
+                }
+            ]
+        }
+    },
+    "tags_intramural": {
+        "uid": "tags_intramural",
+        "title": "Intramural",
+        "description": {
+            "type": "doc",
+            "uid": "7eddf21e6483480da0f9dd87729ec5b8",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "371d4aec644b4917b1ac0286702caecc"
+                }
+            ]
+        }
+    },
+    "tags_faculty_and_staff": {
+        "uid": "tags_faculty_and_staff",
+        "title": "Faculty and Staff",
+        "description": {
+            "type": "doc",
+            "uid": "7fbd63098926451eb7da536c115363fb",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "f9a61af94b5147f1b5ef1cec1db2c444"
+                }
+            ]
+        }
+    },
+    "tags_departments": {
+        "uid": "tags_departments",
+        "title": "Departments",
+        "description": {
+            "type": "doc",
+            "uid": "203189775b1244d79ac0231a737594ab",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "22a22fa8c1af429eadcf783d941e804e"
+                }
+            ]
+        }
+    },
+    "tags_programs": {
+        "uid": "tags_programs",
+        "title": "Programs",
+        "description": {
+            "type": "doc",
+            "uid": "e53edeb2872a4c1fb3cbf7f2774d7cfe",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "0bffeac2f5df423abcd7c5a1ae52a77d"
+                }
+            ]
+        }
+    },
+    "tags_minors": {
+        "uid": "tags_minors",
+        "title": "Minors",
+        "description": {
+            "type": "doc",
+            "uid": "67a887343aa041faafc0dc1e070644d9",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "76f9ef5734c84015b47093980e0324a1"
+                }
+            ]
+        }
+    },
+    "tags_home": {
+        "uid": "tags_home",
+        "title": "Home",
+        "description": {
+            "type": "doc",
+            "uid": "2343f62192104cbaa4738dc3c74a4491",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "d8d76b273f84494492b25c9a0f89fc18"
+                }
+            ]
+        }
+    },
+    "tags_centers___institutes": {
+        "uid": "tags_centers___institutes",
+        "title": "Centers & Institutes",
+        "description": {
+            "type": "doc",
+            "uid": "46937417f8b44466a19d23fe4d68e577",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "668badfe0eaa497c9746425dece1a862"
+                }
+            ]
+        }
+    },
+    "tags_other_research_groups": {
+        "uid": "tags_other_research_groups",
+        "title": "Other Research Groups",
+        "description": {
+            "type": "doc",
+            "uid": "87aed78e63e94df39d7884519956d87f",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "a449707f522044629ea9063070082469"
+                }
+            ]
+        }
+    },
+    "tags_research_groups": {
+        "uid": "tags_research_groups",
+        "title": "Research Groups",
+        "description": {
+            "type": "doc",
+            "uid": "f79ec71092994772bc8e44cf61faf057",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "30420e08a5234ef7b25acafcd3471c38"
+                }
+            ]
+        }
+    },
+    "tags_research": {
+        "uid": "tags_research",
+        "title": "Research",
+        "description": {
+            "type": "doc",
+            "uid": "593097acfe9f481e9f6ae7d4edd986ee",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "0bb5b4d96e6c48bcaca459076f4ddd37"
+                }
+            ]
+        }
+    },
+    "list_community": {
+        "uid": "list_community",
+        "title": "Community",
+        "description": {
+            "type": "doc",
+            "uid": "3d3495ab040044d692ff429a08fa2e31",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "6b15c9a0f127484cb85271663b742085"
+                }
+            ]
+        }
+    },
+    "tags_university_relations": {
+        "uid": "tags_university_relations",
+        "title": "University Relations",
+        "description": {
+            "type": "doc",
+            "uid": "e8070d6271ba4310b3090018f7a2f8ee",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "08dd3123fdb94120bc2332b1bfccf813"
+                }
+            ]
+        }
+    },
+    "tags_allied_administrative___support_departments": {
+        "uid": "tags_allied_administrative___support_departments",
+        "title": "Allied Administrative & Support Departments",
+        "description": {
+            "type": "doc",
+            "uid": "1f9a593828604abc97416863b794e4d8",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "eeeef3396e8e437ea9afc51e5a80b348"
+                }
+            ]
+        }
+    },
+    "tags_faculty_resources": {
+        "uid": "tags_faculty_resources",
+        "title": "Faculty Resources",
+        "description": {
+            "type": "doc",
+            "uid": "9c1155f4f6f242baacf43f481a1b0d2a",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "276570a23130494fb04069239eff8712"
+                }
+            ]
+        }
+    },
+    "tags_holiday": {
+        "uid": "tags_holiday",
+        "title": "Holiday",
+        "description": {
+            "type": "doc",
+            "uid": "de265148ecf04f54832b097a3e03dec9",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "a8ae9689f02c40fa8d5b303df595ea24"
+                }
+            ]
+        }
+    },
+    "tags_canvas": {
+        "uid": "tags_canvas",
+        "title": "Canvas",
+        "description": {
+            "type": "doc",
+            "uid": "b83c9ab6934240f8b13184587c9420b9",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "fafe236d3d5547ef897af9843eb0675d"
+                }
+            ]
+        }
+    },
+    "tags_graduation": {
+        "uid": "tags_graduation",
+        "title": "Graduation",
+        "description": {
+            "type": "doc",
+            "uid": "972d8aa52cfb42888781ab2dba1aa147",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "59670be845444b138dd43d013270a9b8"
+                }
+            ]
+        }
+    },
+    "tags_rice_responds": {
+        "uid": "tags_rice_responds",
+        "title": "Rice Responds",
+        "description": {
+            "type": "doc",
+            "uid": "96822f680a4e4774af5db1206a0ebf30",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "ed3fd5184df84a3c88111c2c29894cff"
+                }
+            ]
+        }
+    },
+    "videos_coronavirus": {
+        "uid": "videos_coronavirus",
+        "title": "Coronavirus",
+        "description": {
+            "type": "doc",
+            "uid": "f80ef085a6464838acfb5842c4a2b660",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "d71c31a5df294dd09f74481b19081649"
+                }
+            ]
+        }
+    },
+    "tags_president_stories": {
+        "uid": "tags_president_stories",
+        "title": "President Stories",
+        "description": {
+            "type": "doc",
+            "uid": "49c3a8a7d6d24c0090f81d415b447f27",
+            "attrs": {},
+            "children": [
+                {
+                    "type": "p",
+                    "attrs": {},
+                    "children": [
+                        {
+                            "text": ""
+                        }
+                    ],
+                    "uid": "770511939adf4ace95e6b9d1b55d95c9"
+                }
+            ]
+        }
+    }
+}

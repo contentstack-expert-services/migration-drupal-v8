@@ -8,7 +8,7 @@ var mkdirp = require("mkdirp"),
   when = require("when");
 phpUnserialize = require("phpunserialize");
 
-var helper = require("../../libs/utils/helper.js");
+var helper = require("../utils/helper.js");
 
 var queryConfig = config.modules.query,
   queryFolderPath = path.resolve(config.data, queryConfig.dirName);
@@ -103,9 +103,6 @@ Extractfield.prototype = {
         when
           .all(queries)
           .then(function (result) {
-            const modifiedResult = result.map(
-              (item) => `MAX(${item}) as ${item.split(".").pop()}`
-            );
             var where = [];
             for (var key in last) {
               where.push(
@@ -122,22 +119,30 @@ Extractfield.prototype = {
               left = where[i] + left;
             }
             last.unshift("node");
-            modifiedResult.unshift(
-              "SELECT node.nid, MAX(node.title) AS title, MAX(node.langcode) AS langcode, MAX(node.created) as created, MAX(node.type) as type"
+            result.unshift(
+              "SELECT node.nid,node.title,node.langcode,node.created, node.type"
             );
-            var resultdetail = modifiedResult.join(",");
+            var resultdetail = result.join(",");
 
             var type = "'" + data + "'";
             var querydata = resultdetail.concat(
               " FROM  node_field_data node " +
                 left +
                 " WHERE node.type = " +
-                type +
-                " GROUP BY node.nid"
+                type
             );
-
+            // console.log(querydata)
+  //          let res1 = result.join(",").replace("SELECT","").split(".")
+  // res1.shift()
+  //          let allCols = res1.map(el=>{
+  //           return el.split(",")[0]
+          
+  //         })
+  //         allCols.shift()
+  //          let distinctQuery = "SELECT DISTINCT(NID),"+allCols.join(",")+" from ("+querydata+") AS X"
+          //  console.log(distinctQuery)
             countPage =
-              "SELECT count(distinct(node.nid)) as countentry FROM  node_field_data node " +
+              "SELECT count(node.nid) as countentry FROM  node_field_data node " +
               left +
               " WHERE node.type = " +
               type;

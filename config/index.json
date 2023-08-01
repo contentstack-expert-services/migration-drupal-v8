@@ -59,10 +59,10 @@
   },
   "base_locale": { "name": "English US", "code": "en-us" },
   "mysql": {
-    "host": "",
-    "user": "",
-    "password": "",
-    "database": ""
+    "host": "localhost",
+    "user": "root",
+    "password": "root",
+    "database": "riceuni1"
   },
   "base_url": "",
   "public_path": "",
