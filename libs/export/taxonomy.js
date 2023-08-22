@@ -70,10 +70,12 @@ ExtractTaxonomy.prototype = {
         let htmlDoc = dom.window.document.querySelector("body");
         const jsonValue = htmlToJson(htmlDoc);
         description = jsonValue;
+        // console.log("Data is ",data)
         if (parent != 0 && parent !== undefined) {
+        
           categorydata[`taxonomy_${data["tid"]}`] = {
             uid: `taxonomy_${data["tid"]}`,
-            title: data["title"],
+            title: data["name"],
             description: description,
             vid: vocabularyRef,
             parent: taxonomyRef,
@@ -81,13 +83,14 @@ ExtractTaxonomy.prototype = {
         } else {
           categorydata[`taxonomy_${data["tid"]}`] = {
             uid: `taxonomy_${data["tid"]}`,
-            title: data["title"],
+            title: data["name"],
             description: description,
             vid: vocabularyRef,
           };
         }
         categorymaster["en-us"][data["tid"]] = "";
       });
+      // console.log(categorydata)
       helper.writeFile(
         path.join(vocabularyFolderPath, vocabularyConfig.fileName),
         JSON.stringify(categorydata, null, 4)
@@ -105,6 +108,7 @@ ExtractTaxonomy.prototype = {
       // self.connection.connect()
       var query = config["mysql-query"]["taxonomy_term_data"];
       query = query + " limit " + skip + ", " + limit;
+      console.log(query)
       self.connection.query(query, function (error, rows, fields) {
         if (!error) {
           if (rows.length > 0) {
@@ -122,6 +126,7 @@ ExtractTaxonomy.prototype = {
     var self = this;
     return when.promise(function (resolve, reject) {
       var _gettaxonomy = [];
+      // console.log(taxanomycount)
       for (var i = 0, total = taxanomycount; i < total; i += limit) {
         _gettaxonomy.push(
           (function (data) {

@@ -45,13 +45,28 @@ ExtractAuthors.prototype = {
       var authordata = helper.readFile(
         path.join(authorsFolderPath, authorConfig.fileName)
       );
+      let assetId = helper.readFile(
+        path.join(process.cwd(), "drupalMigrationData", "assets", "assets.json")
+      );
       var authormaster = helper.readFile(
         path.join(masterFolderPath, authorConfig.masterfile)
       );
       authordetails.map(function (data) {
+        var profileimage;
         if (data["name"] !== "") {
           authormaster["en-us"][data["name"]] = "";
-          var profileimage = data["picture"];
+          if (
+            `assets_${data["picture"]}` in assetId 
+            // && dataKey === `${conv_details.field_name}_target_id` &&
+            // (conv_details.field_type === "file" ||
+            //   conv_details.field_type === "image")
+          ) {
+            profileimage = assetId[ `assets_${data["picture"]}`]
+            // data[dataKey] = assetId[`assets_${value}`];
+          }else{
+            delete data['picture']
+          }
+          // var profileimage = data["picture"];
           if (profileimage) {
             authordata[data["name"]] = {
               title: data["name"],
