@@ -76,7 +76,6 @@ ExtractPosts.prototype = {
           var conv_details = phpUnserialize(rows[i].data);
           for (const [Fieldkey, data] of Object.entries(postsdetails)) {
             for (const [dataKey, value] of Object.entries(data)) {
-
               //for image and files
 
               if (
@@ -89,12 +88,16 @@ ExtractPosts.prototype = {
                     conv_details.field_type === "image")
                 ) {
                   if (
-                    `assets_${value}` in assetId &&
+                    (`assets_${value}` in assetId || value?.uid in assetId) &&
                     dataKey === `${conv_details.field_name}_target_id` &&
                     (conv_details.field_type === "file" ||
                       conv_details.field_type === "image")
                   ) {
-                    data[dataKey] = assetId[`assets_${value}`];
+                    if (value?.uid in assetId) {
+                      data[dataKey] = data[dataKey];
+                    } else {
+                      data[dataKey] = assetId[`assets_${value}`];
+                    }
                   } else {
                     delete data[dataKey];
                   }

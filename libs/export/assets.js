@@ -65,7 +65,7 @@ ExtractAssets.prototype = {
         url = url.replace("public://", replaceValue);
         url = url.replace("private://", replaceValue);
       }
-      // console.log(url)
+    
       var name = assets["filename"];
       url = encodeURI(url);
       if (
@@ -73,7 +73,6 @@ ExtractAssets.prototype = {
           path.resolve(assetFolderPath, assets["fid"].toString(), name)
         )
       ) {
-        // successLogger("asset already present " + "'" + name + "'");
         resolve(assets["fid"]);
       } else {
         try {
