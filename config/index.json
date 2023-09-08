@@ -59,12 +59,12 @@
   },
   "base_locale": { "name": "English US", "code": "en-us" },
   "mysql": {
-    "host": "localhost",
-    "user": "root",
-    "password": "root",
-    "database": "riceuni"
+    "host": "",
+    "user": "",
+    "password": "",
+    "database": ""
   },
-  "base_url": "https://financialaid.rice.edu/",
+  "base_url": "",
   "public_path": "sites/g/files/bxs4201/files/",
   "private_path": "",
   "drupal_base_url": "",
