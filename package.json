@@ -1,5 +1,5 @@
 {
-  "name": "DrupalMysqlExport",
+  "name": "drupalMysqlExport",
   "version": "1.0.0",
   "dependencies": {
     "@contentstack/json-rte-serializer": "^2.0.6",
