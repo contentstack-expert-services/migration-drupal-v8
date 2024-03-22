@@ -62,7 +62,7 @@ To be able to correctly map the Drupal content types to the Contentstack content
 Run the command given below to export all the modules:
 
 ```bash
- npm run export
+ node index.js
 ```
 
 ## Create a new stack in your organization in contentstack.

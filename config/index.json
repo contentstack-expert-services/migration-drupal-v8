@@ -59,10 +59,10 @@
   },
   "base_locale": { "name": "English US", "code": "en-us" },
   "mysql": {
-    "host": "",
-    "user": "",
+    "host": "localhost",
+    "user": "root",
     "password": "",
-    "database": ""
+    "database": "riceunivercity1"
   },
   "base_url": "",
   "public_path": "sites/g/files/bxs4201/files/",
@@ -71,7 +71,7 @@
   "mysql-query": {
     "locale": "SELECT languages.language,languages.name FROM `languages`",
     "taxonomy_term_data": "SELECT a.name, max(a.description__value) as description__value ,max(b.tid) as tid,max(b.vid) as vid FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.vid=b.vid group by a.name",
-    "taxonomyCount": "SELECT count(distinct(b.tid)) as taxonomycount FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.tid = b.tid AND a.vid=b.vid",
+    "taxonomyCount": "SELECT count(b.tid) as taxonomycount FROM taxonomy_term_field_data a, taxonomy_term_data b WHERE a.tid = b.tid AND a.vid=b.vid",
     "ct_mapped": "SELECT *, CONVERT(data USING utf8) as data FROM config WHERE name LIKE '%field.field.node%'",
     "fileID": "SELECT * FROM `file_usage`",
     "assetCount": "SELECT count(a.fid) as assetcount FROM file_managed a",

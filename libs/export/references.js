@@ -1,16 +1,16 @@
-var mkdirp = require("mkdirp"),
-  path = require("path"),
-  fs = require("fs"),
-  when = require("when"),
-  guard = require("when/guard"),
-  parallel = require("when/parallel"),
-  sequence = require("when/sequence"),
+var mkdirp = require('mkdirp'),
+  path = require('path'),
+  fs = require('fs'),
+  when = require('when'),
+  guard = require('when/guard'),
+  parallel = require('when/parallel'),
+  sequence = require('when/sequence'),
   limit = 100;
 
 /**
  * Internal module Dependencies.
  */
-var helper = require("../utils/helper");
+var helper = require('../utils/helper');
 
 var referencesConfig = config.modules.references,
   referencesFolderPath = path.resolve(config.data, referencesConfig.dirName);
@@ -37,12 +37,7 @@ ExtractReferences.prototype = {
   putPosts: function (postsdetails, key) {
     return when.promise(function (resolve, reject) {
       var referenceData = helper.readFile(
-        path.join(
-          process.cwd(),
-          "/drupalMigrationData",
-          "references",
-          "references.json"
-        )
+        path.join(process.cwd(), config.data, 'references', 'references.json')
       );
       postsdetails.map((data) => {
         referenceData[`content_type_entries_title_${data.nid}`] = {
@@ -52,9 +47,9 @@ ExtractReferences.prototype = {
         helper.writeFile(
           path.join(
             process.cwd(),
-            "/drupalMigrationData",
-            "references",
-            "references.json"
+            config.data,
+            'references',
+            'references.json'
           ),
           JSON.stringify(referenceData, null, 4)
         );
@@ -65,8 +60,8 @@ ExtractReferences.prototype = {
   getQuery: function (pagename, skip, queryPageConfig) {
     var self = this;
     return when.promise(function (resolve, reject) {
-      var query = queryPageConfig["page"]["" + pagename + ""];
-      query = query + " limit " + skip + ", " + limit;
+      var query = queryPageConfig['page']['' + pagename + ''];
+      query = query + ' limit ' + skip + ', ' + limit;
       self.connection.query(query, function (error, rows, fields) {
         if (!error) {
           if (rows.length > 0) {
@@ -110,7 +105,7 @@ ExtractReferences.prototype = {
         })
         .catch(function (e) {
           errorLogger(
-            "something wrong while exporting entries" + pagename + ":",
+            'something wrong while exporting entries' + pagename + ':',
             e
           );
           self.connection.end();
@@ -120,12 +115,12 @@ ExtractReferences.prototype = {
   },
 
   start: function () {
-    successLogger("Exporting references...");
+    successLogger('Exporting references...');
 
     var self = this;
     return when.promise(function (resolve, reject) {
       var queryPageConfig = helper.readFile(
-        path.join(process.cwd(), "drupalMigrationData", "query", "index.json")
+        path.join(process.cwd(), config.data, 'query', 'index.json')
       );
       var pagequery = queryPageConfig.page;
       var _getPage = [];
@@ -146,7 +141,7 @@ ExtractReferences.prototype = {
         })
         .catch(function (e) {
           errorLogger(
-            "something wrong while exporting entries " + key + ": ",
+            'something wrong while exporting entries ' + key + ': ',
             e
           );
           reject(e);
