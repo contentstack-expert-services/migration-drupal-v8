@@ -50,14 +50,14 @@ ExtractPosts.prototype = {
       var field_name = Object.keys(postsdetails[0]);
       var isoDate = new Date();
       var contentTypeQuery = config['mysql-query']['ct_mapped'];
-      // console.log(postsdetails)
+
       self.connection.query(contentTypeQuery, function (error, rows, fields) {
         for (var i = 0; i < rows.length; i++) {
           var conv_details = phpUnserialize(rows[i].data);
           for (const [Fieldkey, data] of Object.entries(postsdetails)) {
             for (const [dataKey, value] of Object.entries(data)) {
-              // console.log([dataKey, value])
               //for image and files
+
               if (
                 conv_details.field_type === 'file' ||
                 conv_details.field_type === 'image'
@@ -165,7 +165,6 @@ ExtractPosts.prototype = {
             var date;
 
             for (var key in field_name) {
-              // console.log(field_name[key])
               var re = field_name[key].endsWith('_tid');
               if (field_name[key] == 'created') {
                 date = new Date(data[field_name[key]] * 1000);
@@ -235,18 +234,13 @@ ExtractPosts.prototype = {
     return when.promise(function (resolve, reject) {
       var query = queryPageConfig['page']['' + pagename + ''];
       query = query + ' limit ' + skip + ', ' + limit;
-      // query = query;
-      // console.log(query)
+
       self.connection.query(query, function (error, rows, fields) {
         if (!error) {
           if (rows.length > 0) {
-            // console.log(rows.length)
             self
               .putPosts(rows, pagename)
               .then(function (results) {
-                // Object.keys(results.last).forEach(el=>{
-                //   a
-                // })
                 let allUids = rows.map((r) => r.nid);
                 allUids.forEach((element) => {
                   console.log(
@@ -256,10 +250,6 @@ ExtractPosts.prototype = {
                     chalk.green(`${element}`)
                   );
                 });
-                // console.log(
-                //   "Exporting entries for",
-                //   chalk.green(`${pagename}`)
-                // );
                 resolve(results);
               })
               .catch(function () {
@@ -277,12 +267,6 @@ ExtractPosts.prototype = {
     });
   },
   getPageCount: function (pagename, queryPageConfig) {
-    // console.log("Page Name is ", pagename)
-    // console.log("Page Name is ", queryPageConfig)
-    // console.log("This is", this)
-    // return;
-
-    // return;
     var self = this;
     return when.promise(function (resolve, reject) {
       var query = queryPageConfig['count']['' + pagename + 'Count'];
@@ -292,15 +276,14 @@ ExtractPosts.prototype = {
         if (error) {
           console.log(error);
         }
-        // console.log("rowsCount is ",)
+
         var _getPage = [];
-        // console.log(pagename)
+
         for (
           var i = 0, total = rowsCount[0].countentry;
           i < total + limit;
           i += limit
         ) {
-          // console.log(i)
           _getPage.push(
             (function (data) {
               return function () {

@@ -21,12 +21,23 @@ var assetConfig = config.modules.asset,
   failedJSON =
     helper.readFile(path.join(assetMasterFolderPath, "failed.json")) || {};
 
+    if(!fs.existsSync(path.join(process.cwd(),"logs"))){
+      mkdirp.sync(process.cwd(),"logs");
+      mkdirp.sync(assetMasterFolderPath);
+      helper.writeFile(path.join(assetMasterFolderPath, "failed.json"));
+    }
+    if (!fs.existsSync(assetMasterFolderPath)) {
+      mkdirp.sync(assetMasterFolderPath);
+      helper.writeFile(path.join(assetMasterFolderPath, "failed.json"));
+    }
+
 if (!fs.existsSync(assetFolderPath)) {
   mkdirp.sync(assetFolderPath);
   helper.writeFile(path.join(assetFolderPath, assetConfig.fileName));
 
   mkdirp.sync(assetMasterFolderPath);
   helper.writeFile(path.join(assetMasterFolderPath, "failed.json"));
+
 }
 
 //Reading a File
@@ -45,13 +56,14 @@ ExtractAssets.prototype = {
     var self = this;
     return when.promise(async function (resolve, reject) {
       var url = assets["uri"];
+   
 
       let replaceValue = config.base_url + config.public_path;
       if (!url.startsWith("http")) {
         url = url.replace("public://", replaceValue);
         url = url.replace("private://", replaceValue);
       }
-
+    
       var name = assets["filename"];
       url = encodeURI(url);
       if (
@@ -59,7 +71,6 @@ ExtractAssets.prototype = {
           path.resolve(assetFolderPath, assets["fid"].toString(), name)
         )
       ) {
-        // successLogger("asset already present " + "'" + name + "'");
         resolve(assets["fid"]);
       } else {
         try {
