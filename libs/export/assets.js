@@ -24,7 +24,6 @@ var assetConfig = config.modules.asset,
 if (!fs.existsSync(assetFolderPath)) {
   mkdirp.sync(assetFolderPath);
   helper.writeFile(path.join(assetFolderPath, assetConfig.fileName));
-  helper.writeFile(path.join(assetFolderPath, assetConfig.featuredfileName));
 
   mkdirp.sync(assetMasterFolderPath);
   helper.writeFile(path.join(assetMasterFolderPath, "failed.json"));
@@ -47,8 +46,7 @@ ExtractAssets.prototype = {
     return when.promise(async function (resolve, reject) {
       var url = assets["uri"];
 
-      let replaceValue =
-        config.base_url + config.public_path;
+      let replaceValue = config.base_url + config.public_path;
       if (!url.startsWith("http")) {
         url = url.replace("public://", replaceValue);
         url = url.replace("private://", replaceValue);

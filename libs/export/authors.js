@@ -1,17 +1,17 @@
 /**
  * External module Dependencies.
  */
-var mkdirp = require("mkdirp"),
-  path = require("path"),
-  fs = require("fs"),
-  when = require("when"),
-  guard = require("when/guard"),
-  parallel = require("when/parallel");
+var mkdirp = require('mkdirp'),
+  path = require('path'),
+  fs = require('fs'),
+  when = require('when'),
+  guard = require('when/guard'),
+  parallel = require('when/parallel');
 
 /**
-* Internal module Dependencies.
-*/
-var helper = require("../utils/helper");
+ * Internal module Dependencies.
+ */
+var helper = require('../utils/helper');
 
 var authorConfig = config.modules.authors,
   authorsFolderPath = path.resolve(
@@ -19,20 +19,14 @@ var authorConfig = config.modules.authors,
     config.entryfolder,
     authorConfig.dirName
   ),
-  masterFolderPath = path.resolve(config.data, "master", config.entryfolder);
-limit = 100;
+  limit = 100;
 
 /**
-* Create folders and files
-*/
+ * Create folders and files
+ */
 if (!fs.existsSync(authorsFolderPath)) {
   mkdirp.sync(authorsFolderPath);
   helper.writeFile(path.join(authorsFolderPath, authorConfig.fileName));
-  mkdirp.sync(masterFolderPath);
-  helper.writeFile(
-    path.join(masterFolderPath, authorConfig.masterfile),
-    '{"en-us":{}}'
-  );
 }
 
 function ExtractAuthors() {
@@ -45,25 +39,36 @@ ExtractAuthors.prototype = {
       var authordata = helper.readFile(
         path.join(authorsFolderPath, authorConfig.fileName)
       );
-      var authormaster = helper.readFile(
-        path.join(masterFolderPath, authorConfig.masterfile)
+
+      let assetId = helper.readFile(
+        path.join(process.cwd(), config.data, 'assets', 'assets.json')
       );
+
       authordetails.map(function (data) {
-        if (data["name"] !== "") {
-          authormaster["en-us"][data["name"]] = "";
-          var profileimage = data["picture"];
+        if (data['name'] !== '') {
+          var profileimage;
+          let uid = `${data['uid']}_${data['name'].toLowerCase()}`;
+
+          if (`assets_${data['picture']}` in assetId) {
+            profileimage = assetId[`assets_${data['picture']}`];
+          } else {
+            delete data['pitcture'];
+          }
+
           if (profileimage) {
-            authordata[data["name"]] = {
-              title: data["name"],
-              email: data["mail"],
-              picture: profileimage,
-              timezone: data["timezone"],
+            authordata[uid] = {
+              uid: uid,
+              title: data['name'],
+              email: data['mail'],
+              timezone: data['timezone'],
+              admin_picture: profileimage,
             };
           } else {
-            authordata[data["name"]] = {
-              title: data["name"],
-              email: data["mail"],
-              timezone: data["timezone"],
+            authordata[uid] = {
+              uid: uid,
+              title: data['name'],
+              email: data['mail'],
+              timezone: data['timezone'],
             };
           }
         } else {
@@ -75,10 +80,6 @@ ExtractAuthors.prototype = {
         path.join(authorsFolderPath, authorConfig.fileName),
         JSON.stringify(authordata, null, 4)
       );
-      helper.writeFile(
-        path.join(masterFolderPath, authorConfig.masterfile),
-        JSON.stringify(authormaster, null, 4)
-      );
       resolve();
     });
   },
@@ -86,8 +87,8 @@ ExtractAuthors.prototype = {
     var self = this;
     return when.promise(function (resolve, reject) {
       // self.connection.connect()
-      var query = config["mysql-query"]["authors"];
-      query = query + " limit " + skip + ", " + limit;
+      var query = config['mysql-query']['authors'];
+      query = query + ' limit ' + skip + ', ' + limit;
       self.connection.query(query, function (error, rows, fields) {
         if (!error) {
           if (rows.length > 0) {
@@ -95,7 +96,7 @@ ExtractAuthors.prototype = {
             resolve();
           }
         } else {
-          errorLogger("no authors found");
+          errorLogger('no authors found');
           resolve(error);
         }
       });
@@ -123,7 +124,7 @@ ExtractAuthors.prototype = {
           resolve();
         })
         .catch(function (e) {
-          errorLogger("something wrong while exporting authors:", e);
+          errorLogger('something wrong while exporting authors:', e);
           reject(e);
         });
     });
@@ -133,10 +134,10 @@ ExtractAuthors.prototype = {
     var self = this;
     return when.promise(function (resolve, reject) {
       self.connection.connect();
-      var query = config["mysql-query"]["authorCount"];
+      var query = config['mysql-query']['authorCount'];
       self.connection.query(query, function (error, rows, fields) {
         if (!error) {
-          var usercount = rows[0]["usercount"];
+          var usercount = rows[0]['usercount'];
           if (usercount > 0) {
             self
               .getAllAuthors(usercount)
@@ -147,12 +148,12 @@ ExtractAuthors.prototype = {
                 reject();
               });
           } else {
-            errorLogger("no authors found");
+            errorLogger('no authors found');
             self.connection.end();
             resolve();
           }
         } else {
-          errorLogger("failed to get authors count: ", error);
+          errorLogger('failed to get authors count: ', error);
           self.connection.end();
           reject(error);
         }

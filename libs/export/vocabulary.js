@@ -11,8 +11,8 @@ var mkdirp = require("mkdirp"),
 const { JSDOM } = require("jsdom");
 const { htmlToJson } = require("@contentstack/json-rte-serializer");
 /**
-* Internal module Dependencies.
-*/
+ * Internal module Dependencies.
+ */
 var helper = require("../utils/helper");
 
 var vocabularyConfig = config.modules.vocabulary,
@@ -21,20 +21,14 @@ var vocabularyConfig = config.modules.vocabulary,
     config.entryfolder,
     vocabularyConfig.dirName
   ),
-  masterFolderPath = path.resolve(config.data, "master", config.entryfolder),
   limit = 100;
 
 /**
-* Create folders and files
-*/
+ * Create folders and files
+ */
 if (!fs.existsSync(vocabularyFolderPath)) {
   mkdirp.sync(vocabularyFolderPath);
   helper.writeFile(path.join(vocabularyFolderPath, vocabularyConfig.fileName));
-  mkdirp.sync(masterFolderPath);
-  helper.writeFile(
-    path.join(masterFolderPath, vocabularyConfig.masterfile),
-    '{"en-us":{}}'
-  );
 }
 
 function ExtractVocabulary() {
@@ -46,9 +40,6 @@ ExtractVocabulary.prototype = {
     var vocabularyData = helper.readFile(
       path.join(vocabularyFolderPath, vocabularyConfig.fileName)
     );
-    var masterdata = helper.readFile(
-      path.join(masterFolderPath, vocabularyConfig.masterfile)
-    );
     return when.promise(function (resolve, reject) {
       vocabulary.map(function (data, index) {
         var description = data["description"] || "";
@@ -59,21 +50,18 @@ ExtractVocabulary.prototype = {
         const jsonValue = htmlToJson(htmlDoc);
         description = jsonValue;
 
-        let uid = `${data.vid}_${data["title"].toLowerCase().replace(/[^a-zA-Z0-9]/g, '_')}`;
+        let uid = `${data.vid}_${data["title"]
+          .toLowerCase()
+          .replace(/[^a-zA-Z0-9]/g, "_")}`;
         vocabularyData[uid] = {
           uid: uid,
           title: data["title"],
           description: description,
         };
-        masterdata["en-us"][data["title"]] = "";
       });
       helper.writeFile(
         path.join(vocabularyFolderPath, "en-us.json"),
         JSON.stringify(vocabularyData, null, 4)
-      );
-      helper.writeFile(
-        path.join(masterFolderPath, "vocabulary.json"),
-        JSON.stringify(masterdata, null, 4)
       );
     });
   },

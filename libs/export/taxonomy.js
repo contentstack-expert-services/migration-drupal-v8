@@ -19,7 +19,6 @@ var vocabularyConfig = config.modules.taxonomy,
     config.entryfolder,
     vocabularyConfig.dirName
   ),
-  masterFolderPath = path.resolve(config.data, "master", config.entryfolder),
   limit = 100;
 
 /**
@@ -28,11 +27,6 @@ var vocabularyConfig = config.modules.taxonomy,
 if (!fs.existsSync(vocabularyFolderPath)) {
   mkdirp.sync(vocabularyFolderPath);
   helper.writeFile(path.join(vocabularyFolderPath, vocabularyConfig.fileName));
-  mkdirp.sync(masterFolderPath);
-  helper.writeFile(
-    path.join(masterFolderPath, vocabularyConfig.masterfile),
-    '{"en-us":{}}'
-  );
 }
 
 function ExtractTaxonomy() {
@@ -45,14 +39,14 @@ ExtractTaxonomy.prototype = {
       var categorydata = helper.readFile(
         path.join(vocabularyFolderPath, vocabularyConfig.fileName)
       );
-      var categorymaster = helper.readFile(
-        path.join(masterFolderPath, vocabularyConfig.masterfile)
-      );
+
       categorydetails.map(function (data, index) {
         var parent = data["parent"];
         let vocabularyRef = [
           {
-            uid: `${data.vid}_${data.name.toLowerCase().replace(/[^a-zA-Z0-9]/g, '_')}`,
+            uid: `${data.vid}_${data.name
+              .toLowerCase()
+              .replace(/[^a-zA-Z0-9]/g, "_")}`,
             _content_type_uid: "vocabulary",
           },
         ];
@@ -86,15 +80,10 @@ ExtractTaxonomy.prototype = {
             vid: vocabularyRef,
           };
         }
-        categorymaster["en-us"][data["tid"]] = "";
       });
       helper.writeFile(
         path.join(vocabularyFolderPath, vocabularyConfig.fileName),
         JSON.stringify(categorydata, null, 4)
-      );
-      helper.writeFile(
-        path.join(masterFolderPath, vocabularyConfig.masterfile),
-        JSON.stringify(categorymaster, null, 4)
       );
       resolve();
     });

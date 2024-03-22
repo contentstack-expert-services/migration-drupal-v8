@@ -39,8 +39,8 @@
     },
     {
       "data_type": "file",
-      "display_name": "picture",
-      "uid": "picture",
+      "display_name": "Admin Picture",
+      "uid": "admin_picture",
       "field_metadata": {
         "description": "",
         "rich_text_type": "standard"
